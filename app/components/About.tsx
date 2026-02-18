@@ -1,9 +1,9 @@
 export default function About() {
   return (
-    <section id="about" className="py-16 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-4">
+        <div className="mb-8">
+          <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-3">
             ВАШ НАДІЙНИЙ ПАРТНЕР У <br />
             СФЕРІ <span className="text-green-700">ЗЕЛЕНОЇ ЕНЕРГЕТИКИ</span>
           </h2>

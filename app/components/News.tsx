@@ -17,7 +17,7 @@ const news = [
 
 export default function News() {
   return (
-    <section id="news" className="py-16 bg-white">
+    <section id="news" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
            <span className="text-sm text-gray-500 uppercase tracking-wider">Головна / Новини в світі енергетики</span>
