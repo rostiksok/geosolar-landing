@@ -62,12 +62,12 @@ export default function Header() {
           </nav>
 
           {/* Contact Info & Lang */}
-          <div className="hidden md:flex items-center space-x-4">
+          <a href="https://wa.me/380682808282" target="_blank" className="hidden md:flex items-center space-x-4">
             <div className="font-bold text-gray-800">+380 68 280 82 82</div>
-            <button className="p-2 rounded-full bg-green-100 hover:bg-green-200 transition-colors">
+            <div className="p-2 rounded-full bg-green-100 hover:bg-green-200 transition-colors">
               <Phone className="w-5 h-5 text-green-700" />
-            </button>
-          </div>
+            </div>
+          </a>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">

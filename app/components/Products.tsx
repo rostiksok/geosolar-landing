@@ -62,7 +62,6 @@ export default function Products() {
     <section id="products" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-           <span className="text-sm text-gray-500 uppercase tracking-wider">Головна / Продукти</span>
           <h2 className="mt-2 text-4xl font-bold text-black uppercase">ПРОДУКТИ</h2>
         </div>
 

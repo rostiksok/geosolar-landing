@@ -11,8 +11,18 @@ export default function Calculator() {
   const [stationType, setStationType] = useState("ground");
 
   // Constants
-  const PRICE_PER_KW = 520; // $ per kW
   const GEN_PER_KW_YEAR = 1150; // kWh per year per kW
+  
+  // Determine Price per kW based on station type
+  const getPricePerKw = () => {
+    switch (stationType) {
+      case "roof": return 320;
+      case "membrane": return 380;
+      case "ground": default: return 520;
+    }
+  };
+
+  const PRICE_PER_KW = getPricePerKw();
 
   // Calculations
   const investment = power * PRICE_PER_KW;
@@ -158,13 +168,13 @@ export default function Calculator() {
                 <div className="grid grid-cols-2 gap-4 mb-6">
                    <div className="bg-[#f9fafb] p-6 rounded-2xl text-center">
                       <div className="text-2xl font-extrabold text-black mb-1">
-                        ${investment.toLocaleString()}
+                        {`$${investment.toLocaleString('uk-UA')}`}
                       </div>
                       <div className="text-xs text-gray-500">Вартість інвестиції</div>
                    </div>
                    <div className="bg-[#f9fafb] p-6 rounded-2xl text-center">
                       <div className="text-2xl font-extrabold text-black mb-1">
-                        ${Math.round(netProfit).toLocaleString()}
+                        {`$${Math.round(netProfit).toLocaleString('uk-UA')}`}
                       </div>
                       <div className="text-xs text-gray-500">Отриманий прибуток</div>
                    </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-gray-50">
@@ -8,12 +10,12 @@ export default function About() {
             СФЕРІ <span className="text-green-700">ЗЕЛЕНОЇ ЕНЕРГЕТИКИ</span>
           </h2>
           <div className="flex justify-end">
-             <a
-              href="#contact"
+             <Link
+              href="#contacts"
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#0F5132] hover:bg-[#0b3d26] transition-colors"
             >
               Зв'язатися з нами
-            </a>
+            </Link>
           </div>
         </div>
         

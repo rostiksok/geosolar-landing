@@ -20,7 +20,6 @@ export default function News() {
     <section id="news" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-           <span className="text-sm text-gray-500 uppercase tracking-wider">Головна / Новини в світі енергетики</span>
           <h2 className="mt-2 text-4xl font-bold text-black uppercase">НОВИНИ В СВІТІ ЕНЕРГЕТИКИ</h2>
         </div>
 

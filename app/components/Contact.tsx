@@ -87,18 +87,18 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3">
+                  <a href="https://wa.me/380682808282" target="_blank" className="flex items-center gap-3">
                      <div className="w-10 h-10 rounded-full border border-green-600 flex items-center justify-center text-green-700">
                         <Phone size={20} />
                      </div>
                      <span className="text-gray-800 font-medium">+380 68 280 82 82</span>
-                  </div>
-                   <div className="flex items-center gap-3">
+                  </a>
+                  <a href="mailto:info@nrg.in.ua" target="_blank" className="flex items-center gap-3">
                      <div className="w-10 h-10 rounded-full border border-green-600 flex items-center justify-center text-green-700">
                         <Mail size={20} />
                      </div>
                      <span className="text-gray-800 font-medium">info@nrg.in.ua</span>
-                  </div>
+                  </a>
                 </div>
              </div>
           </div>
