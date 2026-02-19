@@ -166,23 +166,23 @@ export default function Contact() {
           </div>
 
           {/* Right Side: Contact Info & Interactive Cards */}
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-4 md:gap-6">
              {/* Address Card */}
-             <div className="bg-white p-8 rounded-[40px] shadow-2xl shadow-gray-200/50 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
-                <div className="flex items-start gap-6">
-                   <div className="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
-                      <MapPin size={28} />
+             <div className="bg-white p-5 md:p-8 rounded-[32px] md:rounded-[40px] shadow-xl md:shadow-2xl shadow-gray-200/50 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
+                <div className="flex items-start gap-4 md:gap-6">
+                   <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
+                      <MapPin size={22} className="md:w-7 md:h-7" />
                    </div>
-                   <div className="space-y-2">
-                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Адреса офісу</h4>
-                      <p className="text-gray-900 font-bold text-lg leading-snug">
-                         село Великі Гаї, вул. Об'їзна, 3-А, Тернопіль, <br />
+                   <div className="space-y-1.5">
+                      <h4 className="text-[10px] md:text-sm font-bold text-gray-400 uppercase tracking-widest">Адреса офісу</h4>
+                      <p className="text-gray-900 font-bold text-base md:text-lg leading-snug">
+                         село Великі Гаї, вул. Об'їзна, 3-А, Тернопіль, <br className="hidden md:block" />
                          Тернопільська область, 47722
                       </p>
                       <a 
                         href="https://www.google.com/maps/search/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96+%D0%93%D0%B0%D1%97,+%D0%B2%D1%83%D0%BB.+%D0%9E%D0%B1'%D1%97%D0%B7%D0%BD%D0%B0,+3-%D0%90" 
                         target="_blank" 
-                        className="inline-block text-[#E8922D] font-bold text-sm hover:underline mt-2"
+                        className="inline-block text-[#E8922D] font-bold text-xs md:text-sm hover:underline mt-1"
                       >
                          Відкрити на карті →
                       </a>
@@ -191,14 +191,14 @@ export default function Contact() {
              </div>
 
              {/* Phone Card */}
-             <a href="tel:+380689364540" className="bg-white p-8 rounded-[40px] shadow-xl shadow-gray-100 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
-                <div className="flex items-center gap-6">
-                   <div className="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
-                      <Phone size={28} />
+             <a href="tel:+380689364540" className="bg-white p-5 md:p-8 rounded-[32px] md:rounded-[40px] shadow-lg md:shadow-xl shadow-gray-100 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
+                <div className="flex items-center gap-4 md:gap-6">
+                   <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
+                      <Phone size={22} className="md:w-7 md:h-7" />
                    </div>
                    <div>
-                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Гаряча лінія</h4>
-                      <div className="text-2xl font-black text-gray-900 group-hover:text-[#E8922D] transition-colors">
+                      <h4 className="text-[10px] md:text-sm font-bold text-gray-400 uppercase tracking-widest">Гаряча лінія</h4>
+                      <div className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors break-all">
                          +380 (68) 936 45 40
                       </div>
                    </div>
@@ -206,14 +206,14 @@ export default function Contact() {
              </a>
 
              {/* Email Card */}
-             <a href="mailto:office@geosolar.com.ua" className="bg-white p-8 rounded-[40px] shadow-xl shadow-gray-100 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
-                <div className="flex items-center gap-6">
-                   <div className="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
-                      <Mail size={28} />
+             <a href="mailto:office@geosolar.com.ua" className="bg-white p-5 md:p-8 rounded-[32px] md:rounded-[40px] shadow-lg md:shadow-xl shadow-gray-100 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
+                <div className="flex items-center gap-4 md:gap-6">
+                   <div className="w-11 h-11 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
+                      <Mail size={22} className="md:w-7 md:h-7" />
                    </div>
                    <div>
-                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest">E-mail запити</h4>
-                      <div className="text-xl font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors break-all">
+                      <h4 className="text-[10px] md:text-sm font-bold text-gray-400 uppercase tracking-widest">E-mail запити</h4>
+                      <div className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors break-all">
                          office@geosolar.com.ua
                       </div>
                    </div>
