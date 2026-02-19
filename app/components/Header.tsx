@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Phone, User } from "lucide-react";
+import { scrollToContact } from "../utils/scrollTo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,30 +32,35 @@ export default function Header() {
             </Link>
             <Link
               href="#about"
+              onClick={(e) => scrollToContact(e, "about")}
               className="text-gray-700 font-medium hover:text-green-700 transition-colors"
             >
               Про нас
             </Link>
             <Link
               href="#projects"
+              onClick={(e) => scrollToContact(e, "projects")}
               className="text-gray-700 font-medium hover:text-green-700 transition-colors"
             >
               Проєкти
             </Link>
             <Link
               href="#products"
+              onClick={(e) => scrollToContact(e, "products")}
               className="text-gray-700 font-medium hover:text-green-700 transition-colors"
             >
               Продукти
             </Link>
             <Link
               href="#news"
+              onClick={(e) => scrollToContact(e, "news")}
               className="text-gray-700 font-medium hover:text-green-700 transition-colors"
             >
               Новини
             </Link>
             <Link
               href="#contacts"
+              onClick={(e) => scrollToContact(e, "contacts")}
               className="text-gray-700 font-medium hover:text-green-700 transition-colors"
             >
               Контакти

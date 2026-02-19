@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { scrollToContact } from "../utils/scrollTo";
 
 export default function Hero() {
   return (
@@ -29,12 +31,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link
               href="#calculator"
+              onClick={(e) => scrollToContact(e, "calculator")}
               className="inline-flex items-center justify-center px-10 py-4 border border-green-700 text-lg font-bold rounded-full text-green-800 bg-white/80 hover:bg-white transition-all shadow-lg backdrop-blur-md"
             >
               Інвестиційний калькулятор
             </Link>
             <Link
               href="#contacts"
+              onClick={(e) => scrollToContact(e, "contacts")}
               className="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#0F5132] hover:bg-[#0b3d26] transition-all shadow-lg"
             >
               Зв'язатися з нами

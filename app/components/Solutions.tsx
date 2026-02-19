@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import { Zap, Settings, Home } from "lucide-react";
+import { scrollToContact } from "../utils/scrollTo";
 
 export default function Solutions() {
   return (
@@ -16,6 +18,7 @@ export default function Solutions() {
             </h2>
             <Link
               href="#contact"
+              onClick={(e) => scrollToContact(e, "contacts")}
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-green-700 hover:bg-green-800 transition-colors"
             >
               Зв'язатися з нами
