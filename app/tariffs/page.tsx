@@ -89,7 +89,7 @@ export default function Tariffs() {
             <p className="text-sm text-gray-600">
               Точну вартість обладнання та послуг для вашого проєкту можна отримати, звернувшись до нас за адресою{" "}
               <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a>{" "}
-              або зателефонувавши за номером <a href="tel:+380682808282" className="text-[#E8922D] font-bold hover:underline">+380 68 280 82 82</a>.
+              або зателефонувавши за номером <a href="tel:+380689364540" className="text-[#E8922D] font-bold hover:underline">+380 (68) 936 45 40</a>.
             </p>
           </section>
         </div>

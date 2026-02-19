@@ -44,9 +44,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-[#1B2A4A] mb-4 text-sm uppercase tracking-wide">Контакти</h4>
             <div className="flex flex-col gap-3 text-sm text-gray-600">
-              <a href="tel:+380682808282" className="flex items-center gap-2 hover:text-[#E8922D] transition-colors">
+              <a href="tel:+380689364540" className="flex items-center gap-2 hover:text-[#E8922D] transition-colors">
                 <Phone size={16} className="text-[#E8922D]" />
-                +380 68 280 82 82
+                +380 (68) 936 45 40
               </a>
               <a href="mailto:office@geosolar.com.ua" className="flex items-center gap-2 hover:text-[#E8922D] transition-colors">
                 <Mail size={16} className="text-[#E8922D]" />

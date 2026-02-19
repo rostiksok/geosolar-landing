@@ -179,11 +179,11 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-4">
-                  <a href="https://wa.me/380682808282" target="_blank" className="flex items-center gap-3 group">
+                  <a href="https://wa.me/380689364540" target="_blank" className="flex items-center gap-3 group">
                      <div className="w-10 h-10 rounded-full border border-[#E8922D] flex items-center justify-center text-[#E8922D] group-hover:bg-[#E8922D] group-hover:text-white transition-all">
                         <Phone size={20} />
                      </div>
-                     <span className="text-gray-800 font-medium group-hover:text-[#E8922D] transition-colors">+380 68 280 82 82</span>
+                     <span className="text-gray-800 font-medium group-hover:text-[#E8922D] transition-colors">+380 (68) 936 45 40</span>
                   </a>
                    <a href="mailto:office@geosolar.com.ua" target="_blank" className="flex items-center gap-3 group">
                      <div className="w-10 h-10 rounded-full border border-[#E8922D] flex items-center justify-center text-[#E8922D] group-hover:bg-[#E8922D] group-hover:text-white transition-all">

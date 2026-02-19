@@ -49,7 +49,7 @@ export default function ConsumerRights() {
             <p>Якщо у вас є претензії щодо якості товарів або послуг, ви можете звернутися:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Електронна пошта: <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a></li>
-              <li>Телефон: <a href="tel:+380682808282" className="text-[#E8922D] font-bold hover:underline">+380 68 280 82 82</a></li>
+              <li>Телефон: <a href="tel:+380689364540" className="text-[#E8922D] font-bold hover:underline">+380 (68) 936 45 40</a></li>
             </ul>
             <p className="mt-4">
               Ми гарантуємо розгляд кожного звернення протягом 10 робочих днів.

@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
             <p>З питань конфіденційності зверніться до нас:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Електронна пошта: <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a></li>
-              <li>Телефон: <a href="tel:+380682808282" className="text-[#E8922D] font-bold hover:underline">+380 68 280 82 82</a></li>
+              <li>Телефон: <a href="tel:+380689364540" className="text-[#E8922D] font-bold hover:underline">+380 (68) 936 45 40</a></li>
             </ul>
           </section>
 

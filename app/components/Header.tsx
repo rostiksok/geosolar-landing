@@ -70,8 +70,8 @@ export default function Header() {
           </nav>
 
           {/* Contact Info & Lang */}
-          <a href="https://wa.me/380682808282" target="_blank" className="hidden md:flex items-center space-x-4">
-            {/* <div className="font-bold text-gray-800">+380 68 280 82 82</div> */}
+          <a href="https://wa.me/380689364540" target="_blank" className="hidden md:flex items-center space-x-4">
+            {/* <div className="font-bold text-gray-800">+380 (68) 936 45 40</div> */}
             <div className="p-2 rounded-full bg-orange-100 hover:bg-orange-200 transition-colors">
               <Phone className="w-5 h-5 text-[#E8922D]" />
             </div>
@@ -98,20 +98,23 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {[
-              "Головна",
-              "Про нас",
-              "Проєкти",
-              "Обладнання",
-              "Новини",
-              "Контакти",
+              { label: "Головна", id: "home" },
+              { label: "Про нас", id: "about" },
+              { label: "Проєкти", id: "projects" },
+              { label: "Обладнання", id: "products" },
+              { label: "Новини", id: "news" },
+              { label: "Контакти", id: "contacts" },
             ].map((item) => (
               <a
-                key={item}
-                href={`#${item === "Головна" ? "" : item.toLowerCase().replace(" ", "-")}`}
+                key={item.label}
+                href={`#${item.id}`}
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#E8922D] hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  setIsOpen(false);
+                  scrollToContact(e, item.id);
+                }}
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </div>
