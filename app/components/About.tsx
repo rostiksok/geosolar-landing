@@ -1,23 +1,27 @@
 "use client";
 
 import { scrollToContact } from "../utils/scrollTo";
+import { useInView } from "../utils/useInView";
 
 export default function About() {
+  const [sec1Ref, sec1InView] = useInView();
+  const [sec2Ref, sec2InView] = useInView();
+
   return (
     <section id="about" className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
 
         {/* Section 1: Reliable Partner */}
-        <div>
+        <div ref={sec1Ref}>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 gap-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight">
+            <h2 className={`text-3xl md:text-5xl font-bold text-black uppercase leading-tight animate-fade-up ${sec1InView ? "in-view" : ""}`}>
               ТОЧНІСТЬ У КОЖНОМУ ВИМІРІ, <br />
               <span className="text-[#E8922D]">ЕНЕРГІЯ У КОЖНОМУ ДОМІ</span>
             </h2>
             <a
               href="#contacts"
               onClick={(e) => scrollToContact(e, "contacts")}
-              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#1B2A4A] hover:bg-[#152238] transition-all shadow-lg active:scale-95 active:shadow-inner cursor-pointer flex-shrink-0"
+              className={`inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#1B2A4A] hover:bg-[#152238] transition-all shadow-lg active:scale-95 active:shadow-inner cursor-pointer flex-shrink-0 animate-fade-up delay-200 ${sec1InView ? "in-view" : ""}`}
             >
               Зв'язатися з нами
             </a>
@@ -34,8 +38,8 @@ export default function About() {
         </div>
 
         {/* Section 2: About GeoSolar */}
-        <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-6 ">
+        <div ref={sec2Ref}>
+          <h2 className={`text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-6 animate-fade-up ${sec2InView ? "in-view" : ""}`}>
             ПРО <span className="text-[#E8922D]">GEOSOLAR</span>
           </h2>
 
@@ -45,7 +49,7 @@ export default function About() {
           </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-5 text-gray-700 leading-relaxed">
+            <div className={`space-y-5 text-gray-700 leading-relaxed animate-fade-right ${sec2InView ? "in-view" : ""}`}>
               <p>
                 <span className="font-bold text-black">GeoSolar</span> — це
                 поєднання професійної геодезії та сучасних технологій сонячної
@@ -76,7 +80,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className={`grid grid-cols-2 gap-4 animate-fade-left ${sec2InView ? "in-view" : ""}`}>
               <div className="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-gray-200">
                 <img
                   src="/about-image.webp"

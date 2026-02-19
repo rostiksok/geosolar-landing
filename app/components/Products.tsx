@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useInView } from "../utils/useInView";
 
 const categories = [
   { id: "inverters", name: "Інвертори Huawei" },
@@ -84,15 +85,23 @@ const products = [
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState("inverters");
+  const [animationKey, setAnimationKey] = useState(0);
+  const [headerRef, headerInView] = useInView();
+  const [gridRef, gridInView] = useInView();
 
   const filteredProducts = products.filter(p => p.category === activeCategory);
+
+  const handleCategoryChange = (id: string) => {
+    setActiveCategory(id);
+    setAnimationKey(k => k + 1); // re-trigger fade animation
+  };
 
   return (
     <section id="products" className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
-          <h2 className="mt-2 text-4xl font-bold text-black uppercase">ОБЛАДНАННЯ</h2>
-          <p className="text-gray-600 mt-2">Працюємо виключно з обладнанням Tier-1 для максимальної надійності та генерації</p>
+        <div ref={headerRef} className="mb-8">
+          <h2 className={`mt-2 text-4xl font-bold text-black uppercase animate-fade-up ${headerInView ? "in-view" : ""}`}>ОБЛАДНАННЯ</h2>
+          <p className={`text-gray-600 mt-2 animate-fade-up delay-200 ${headerInView ? "in-view" : ""}`}>Працюємо виключно з обладнанням Tier-1 для максимальної надійності та генерації</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -106,7 +115,7 @@ export default function Products() {
                   {categories.map((category) => (
                     <button
                       key={category.id}
-                      onClick={() => setActiveCategory(category.id)}
+                      onClick={() => handleCategoryChange(category.id)}
                       className={`text-left px-6 py-4 font-medium transition-colors border-b border-gray-100 last:border-0 hover:bg-gray-50
                         ${activeCategory === category.id 
                           ? "text-[#E8922D] bg-orange-50 border-l-4 border-l-[#E8922D]" 
@@ -122,9 +131,13 @@ export default function Products() {
 
           {/* Product Grid */}
           <div className="flex-1">
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredProducts.map((product) => (
-                  <div key={product.id} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow group">
+             <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredProducts.map((product, i) => (
+                  <div
+                    key={`${animationKey}-${product.id}`}
+                    className={`bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow group animate-zoom-in ${gridInView ? "in-view" : ""}`}
+                    style={{ transitionDelay: `${i * 100}ms` }}
+                  >
                     <div className="aspect-square bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
                       <img 
                         src={product.image} 

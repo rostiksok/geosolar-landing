@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useInView } from "../utils/useInView";
 
 const projects = [
   {
@@ -34,16 +36,25 @@ const projects = [
 ];
 
 export default function Projects() {
+  const [headRef, headInView] = useInView();
+  const [gridRef, gridInView] = useInView();
+
   return (
     <section id="projects" className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-12">
-          <h2 className="mt-2 text-4xl font-bold text-black uppercase">ПРОЄКТИ</h2>
+        <div ref={headRef} className="mb-12">
+          <h2 className={`mt-2 text-4xl font-bold text-black uppercase animate-fade-up ${headInView ? "in-view" : ""}`}>
+            ПРОЄКТИ
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div key={project.id} className="group cursor-pointer">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, i) => (
+            <div
+              key={project.id}
+              className={`group cursor-pointer animate-fade-up ${gridInView ? "in-view" : ""}`}
+              style={{ transitionDelay: `${i * 100}ms` }}
+            >
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm bg-gray-100 mb-4 transition-transform duration-300 group-hover:scale-[1.02]">
                 <img
                   src={project.image}

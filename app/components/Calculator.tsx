@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Sun, Home, Layers } from "lucide-react";
 import { scrollToContact } from "../utils/scrollTo";
+import { useInView } from "../utils/useInView";
 
 export default function Calculator() {
   const [power, setPower] = useState(30); // Default 30 kW
@@ -10,6 +11,8 @@ export default function Calculator() {
   const [elecPrice, setElecPrice] = useState(10);
   const [exchangeRate, setExchangeRate] = useState(42);
   const [stationType, setStationType] = useState("ground");
+  const [leftRef, leftInView] = useInView();
+  const [rightRef, rightInView] = useInView();
 
   // Constants
   const GEN_PER_KW_YEAR = 1150; // kWh per year per kW
@@ -63,7 +66,7 @@ export default function Calculator() {
           </div>
 
           {/* Right Side: Calculator Card */}
-          <div className="w-full lg:w-1/2">
+          <div ref={rightRef} className={`w-full lg:w-1/2 animate-fade-left ${rightInView ? "in-view" : ""}`}>
              <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
                 <h3 className="font-bold text-black mb-6">
                   Виберіть потужність СЕС та термін експлуатації, <br />

@@ -1,3 +1,6 @@
+"use client";
+import { useInView } from "../utils/useInView";
+
 const news = [
   {
     id: 1,
@@ -16,16 +19,19 @@ const news = [
 ];
 
 export default function News() {
+  const [headerRef, headerInView] = useInView();
+  const [gridRef, gridInView] = useInView();
+
   return (
     <section id="news" className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-12">
-          <h2 className="mt-2 text-4xl font-bold text-black uppercase">НОВИНИ ТА ПОРАДИ</h2>
+        <div ref={headerRef} className="mb-12">
+          <h2 className={`mt-2 text-4xl font-bold text-black uppercase animate-fade-up ${headerInView ? "in-view" : ""}`}>НОВИНИ ТА ПОРАДИ</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {news.map((item) => (
-            <div key={item.id} className="group cursor-pointer">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {news.map((item, i) => (
+            <div key={item.id} className={`group cursor-pointer animate-fade-up ${gridInView ? "in-view" : ""}`} style={{ transitionDelay: `${i * 150}ms` }}>
               <div className="relative aspect-video rounded-2xl overflow-hidden bg-gray-200 mb-6">
                  <img 
                    src={item.image} 

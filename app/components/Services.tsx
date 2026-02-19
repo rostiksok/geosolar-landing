@@ -1,4 +1,9 @@
+"use client";
+import { useInView } from "../utils/useInView";
+
 export default function Services() {
+  const [titleRef, titleInView] = useInView();
+  const [contentRef, contentInView] = useInView();
   const steps = [
     {
       id: "01",
@@ -35,13 +40,13 @@ export default function Services() {
   return (
     <section className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-16 max-w-4xl">
+        <h2 ref={titleRef} className={`text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-16 max-w-4xl animate-fade-up ${titleInView ? "in-view" : ""}`}>
           ВІД ДІЛЯНКИ ДО РОЗЕТКИ — <span className="text-[#E8922D]">ПОВНИЙ ЦИКЛ ПОСЛУГ</span> ДЛЯ ВАШОГО ПРОЄКТУ
         </h2>
 
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
+        <div ref={contentRef} className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left Side: Isometric Image */}
-          <div className="w-full lg:w-1/2 relative group">
+          <div className={`w-full lg:w-1/2 relative group animate-fade-right ${contentInView ? "in-view" : ""}`}>
             {/* Decorative element behind image */}
             <div className="absolute -inset-4 bg-orange-100/50 rounded-[40px] blur-2xl group-hover:bg-orange-200/50 transition-colors duration-500"></div>
             
@@ -54,8 +59,8 @@ export default function Services() {
 
           {/* Right Side: Steps List */}
           <div className="w-full lg:w-1/2 space-y-8">
-             {steps.map((step) => (
-               <div key={step.id} className="flex gap-6">
+             {steps.map((step, i) => (
+               <div key={step.id} className={`flex gap-6 animate-fade-left ${contentInView ? "in-view" : ""}`} style={{ transitionDelay: `${i * 80}ms` }}>
                  <div className="flex-shrink-0 w-10 text-[#E8922D] font-bold text-xl pt-1">
                    {step.id}
                  </div>
