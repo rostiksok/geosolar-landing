@@ -104,7 +104,7 @@ export default function About() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-2xl overflow-hidden shadow-xl bg-gray-100 min-h-[280px]">
+            <div className="rounded-2xl overflow-hidden shadow-xl bg-gray-100 min-h-[100px]">
               <img
                 src="/why.png"
                 alt="GeoSolar проєкт"
