@@ -15,7 +15,7 @@ const products = [
     power: "5 кВт",
     category: "inverters",
     badge: null,
-    image: "/hero-img.png",
+    image: "https://optosolar.se/images/2x/normal/huawei3-10kwm1front-5469-60441.jpg.webp",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const products = [
     power: "30 кВт",
     category: "inverters",
     badge: "Популярний",
-    image: "/hero-img.png",
+    image: "https://www.sesol.se/_next/image?url=https%3A%2F%2Fcdn.gracestudio.io%2Fsesol%2Fsesol_teknik_produkt_vaexelriktare_hybrid_huawei_sun2000_30_40_KTL_M3_Rityta_1_b7d8d2c32c%2Fsesol_teknik_produkt_vaexelriktare_hybrid_huawei_sun2000_30_40_KTL_M3_Rityta_1_b7d8d2c32c.png&w=3840&q=85",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const products = [
     power: "100 кВт",
     category: "inverters",
     badge: null,
-    image: "/hero-img.png",
+    image: "https://www.sesol.se/_next/image?url=https%3A%2F%2Fcdn.gracestudio.io%2Fsesol%2Fsesol_teknik_produkt_vaexelriktare_straeng_huawei_sun2000_100_KTL_M2_Rityta_1_Rityta_1_d0918dddd6%2Fsesol_teknik_produkt_vaexelriktare_straeng_huawei_sun2000_100_KTL_M2_Rityta_1_Rityta_1_d0918dddd6.png&w=3840&q=85",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const products = [
     power: "125 кВт",
     category: "inverters",
     badge: "MAX",
-    image: "/hero-img.png",
+    image: "https://cdn.enfsolar.com/Product/logo/Inverter/5d536217efcd7.png",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const products = [
     power: "615 Вт",
     category: "panels",
     badge: "TIER-1",
-    image: "/hero-img.png",
+    image: "https://cdn.enfsolar.com/Product/logo/Crystalline/66d1523be7017.png",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const products = [
     power: "580 Вт",
     category: "panels",
     badge: null,
-    image: "/hero-img.png",
+    image: "https://innet.com.ua/content/images/43/1000x1000l80mc0/monokrystalichna-soniachna-panel-longi-solar-lr5-72hgd-580m-hi-mo-7-bifacial-dvostoronnii-22366685383850.webp",
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ const products = [
     power: "30 кВт",
     category: "systems",
     badge: "Під ключ",
-    image: "/hero-img.png",
+    image: "https://solar-energy.com.ua/content/images/32/500x500l80mc0/36419357251733.webp",
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ const products = [
     power: "90 кВт",
     category: "systems",
     badge: "Бізнес",
-    image: "/hero-img.png",
+    image: "https://utem.org.ua/assets/uploads/images/products/7a55c-business_100.jpg",
   },
 ];
 

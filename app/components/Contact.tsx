@@ -2,12 +2,12 @@ import { Phone, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contacts" className="relative py-16 overflow-hidden">
+    <section id="contacts" className="relative py-16 overflow-hidden bg-gray-50">
       {/* Background Image */}
       <div 
         className="absolute bottom-0 left-0 right-0 h-[400px] w-full z-0 pointer-events-none"
         style={{
-          backgroundImage: "url('/contacts-bg.png')",
+          // backgroundImage: "public/footer.png",
           backgroundSize: "cover",
           backgroundPosition: "bottom center",
           backgroundRepeat: "no-repeat",

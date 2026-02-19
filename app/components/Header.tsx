@@ -71,7 +71,7 @@ export default function Header() {
 
           {/* Contact Info & Lang */}
           <a href="https://wa.me/380682808282" target="_blank" className="hidden md:flex items-center space-x-4">
-            <div className="font-bold text-gray-800">+380 68 280 82 82</div>
+            {/* <div className="font-bold text-gray-800">+380 68 280 82 82</div> */}
             <div className="p-2 rounded-full bg-orange-100 hover:bg-orange-200 transition-colors">
               <Phone className="w-5 h-5 text-[#E8922D]" />
             </div>
@@ -114,9 +114,6 @@ export default function Header() {
                 {item}
               </a>
             ))}
-            <div className="px-3 py-2 text-[#E8922D] font-bold">
-              +380 68 280 82 82
-            </div>
           </div>
         </div>
       )}

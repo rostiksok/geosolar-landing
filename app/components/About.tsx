@@ -106,7 +106,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-xl bg-gray-100 min-h-[280px]">
               <img
-                src="/about-image.webp"
+                src="/why.png"
                 alt="GeoSolar проєкт"
                 className="w-full h-full object-cover"
                 onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
