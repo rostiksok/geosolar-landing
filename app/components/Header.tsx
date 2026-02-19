@@ -26,6 +26,7 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8">
             <Link
               href="/"
+              onClick={(e) => scrollToContact(e, "home")}
               className="text-green-700 font-bold hover:text-green-800 transition-colors"
             >
               Головна
