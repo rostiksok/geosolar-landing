@@ -17,7 +17,7 @@ export default function About() {
             <a
               href="#contacts"
               onClick={(e) => scrollToContact(e, "contacts")}
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#1B2A4A] hover:bg-[#152238] transition-colors cursor-pointer flex-shrink-0"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#1B2A4A] hover:bg-[#152238] transition-all shadow-lg active:scale-95 active:shadow-inner cursor-pointer flex-shrink-0"
             >
               Зв'язатися з нами
             </a>
@@ -39,10 +39,10 @@ export default function About() {
             ПРО <span className="text-[#E8922D]">GEOSOLAR</span>
           </h2>
 
-          <div className="flex gap-2 mb-8">
+          {/* <div className="flex gap-2 mb-8">
             <div className="w-12 h-6 bg-[#1B2A4A] rounded-sm"></div>
             <div className="w-12 h-6 bg-[#E8922D] rounded-sm"></div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-5 text-gray-700 leading-relaxed">
@@ -114,10 +114,10 @@ export default function About() {
             </div>
 
             <div>
-              <div className="flex gap-2 mb-10">
+              {/* <div className="flex gap-2 mb-10">
                 <div className="w-12 h-6 bg-[#1B2A4A] rounded-sm"></div>
                 <div className="w-12 h-6 bg-[#E8922D] rounded-sm"></div>
-              </div>
+              </div> */}
 
               <div className="space-y-8">
                 {[

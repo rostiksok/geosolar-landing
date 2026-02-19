@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Sun, Home, Layers } from "lucide-react";
+import { scrollToContact } from "../utils/scrollTo";
 
 export default function Calculator() {
   const [power, setPower] = useState(30); // Default 30 kW
@@ -53,7 +54,10 @@ export default function Calculator() {
             <p className="text-gray-600 mb-8">
               Оптимізуйте витрати на електроенергію та <span className="font-bold text-black">зробіть вигідний внесок</span> у чисте майбутнє <span className="font-bold text-black">вже сьогодні!</span>
             </p>
-            <button className="px-8 py-3 bg-[#1B2A4A] text-white font-bold rounded-full hover:bg-[#152238] transition-colors shadow-lg">
+            <button 
+              onClick={(e) => scrollToContact(e as any, "contacts")}
+              className="w-full sm:w-auto px-8 py-4 bg-[#1B2A4A] text-white font-bold rounded-full hover:bg-[#152238] transition-all shadow-lg active:scale-95 active:shadow-inner"
+            >
               Зв'язатися з нами
             </button>
             

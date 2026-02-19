@@ -31,18 +31,18 @@ export default function Hero() {
             Від точного виміру до запуску станції під «Зелений тариф».
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6">
             <Link
               href="#calculator"
               onClick={(e) => scrollToContact(e, "calculator")}
-              className="inline-flex items-center justify-center px-10 py-4 border-2 border-[#1B2A4A] text-lg font-bold rounded-full text-[#1B2A4A] bg-white/80 hover:bg-white transition-all shadow-lg backdrop-blur-md"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 border-2 border-[#1B2A4A] text-lg font-bold rounded-full text-[#1B2A4A] bg-white/80 hover:bg-white transition-all shadow-md active:scale-95 active:shadow-inner backdrop-blur-md"
             >
               Інвестиційний калькулятор
             </Link>
             <Link
               href="#contacts"
               onClick={(e) => scrollToContact(e, "contacts")}
-              className="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#E8922D] hover:bg-[#d17f1f] transition-all shadow-lg"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#E8922D] hover:bg-[#d17f1f] transition-all shadow-lg active:scale-95 active:shadow-inner"
             >
               Безкоштовна консультація
             </Link>

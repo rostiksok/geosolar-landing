@@ -41,8 +41,15 @@ export default function Services() {
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left Side: Isometric Image */}
-          <div className="w-full lg:w-1/2">
-            <img src="https://nrg.com.ua/wp-content/uploads/2025/03/group-3909-png.webp" alt="Схема сонячної електростанції" />
+          <div className="w-full lg:w-1/2 relative group">
+            {/* Decorative element behind image */}
+            <div className="absolute -inset-4 bg-orange-100/50 rounded-[40px] blur-2xl group-hover:bg-orange-200/50 transition-colors duration-500"></div>
+            
+            <img 
+              src="/vid_dilyanky.png" 
+              alt="Схема сонячної електростанції" 
+              className="relative z-10 w-full h-auto rounded-3xl shadow-2xl border-4 border-white hover:scale-[1.02] transition-transform duration-500" 
+            />
           </div>
 
           {/* Right Side: Steps List */}

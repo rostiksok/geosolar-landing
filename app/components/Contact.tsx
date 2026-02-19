@@ -153,9 +153,9 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "loading" || !formData.consent}
-                  className={`mt-8 px-10 py-3 font-bold rounded-full transition-all flex items-center gap-2
+                  className={`mt-8 w-full sm:w-auto px-10 py-4 font-bold rounded-full transition-all flex items-center justify-center gap-2
                     ${formData.consent 
-                      ? "bg-[#1B2A4A] text-white hover:bg-[#152238] shadow-lg shadow-navy-900/20 active:scale-95" 
+                      ? "bg-[#1B2A4A] text-white hover:bg-[#152238] shadow-lg shadow-navy-900/20 active:scale-95 active:shadow-inner" 
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"}
                     ${status === "loading" ? "opacity-80 pointer-events-none" : ""}`}
                 >

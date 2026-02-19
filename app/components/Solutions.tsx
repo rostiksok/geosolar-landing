@@ -18,7 +18,7 @@ export default function Solutions() {
             <Link
               href="#contacts"
               onClick={(e) => scrollToContact(e, "contacts")}
-              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#E8922D] hover:bg-[#d17f1f] transition-colors"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#E8922D] hover:bg-[#d17f1f] transition-all shadow-lg active:scale-95 active:shadow-inner"
             >
               Безкоштовна консультація
             </Link>
