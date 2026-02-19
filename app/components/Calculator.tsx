@@ -35,7 +35,7 @@ export default function Calculator() {
   return (
     <section id="calculator" className="py-16 bg-white relative overflow-hidden">
        {/* Background decorative elements */}
-       <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-l from-green-50 to-transparent pointer-events-none"></div>
+       <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-l from-orange-50 to-transparent pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16">
@@ -44,16 +44,16 @@ export default function Calculator() {
           <div className="w-full lg:w-1/2 pt-8">
             <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-4">
               КАЛЬКУЛЯТОР ПРИБУТКОВОСТІ <br />
-              <span className="text-green-700">СОНЯЧНОЇ СТАНЦІЇ</span>
+              <span className="text-[#E8922D]">СОНЯЧНОЇ СТАНЦІЇ</span>
             </h2>
             <div className="flex gap-2 mb-8">
-               <div className="w-12 h-6 bg-[#1a2c4e] rounded-sm"></div>
-               <div className="w-12 h-6 bg-[#4e5d78] rounded-sm"></div>
+               <div className="w-12 h-6 bg-[#1B2A4A] rounded-sm"></div>
+               <div className="w-12 h-6 bg-[#E8922D] rounded-sm"></div>
             </div>
             <p className="text-gray-600 mb-8">
               Оптимізуйте витрати на електроенергію та <span className="font-bold text-black">зробіть вигідний внесок</span> у чисте майбутнє <span className="font-bold text-black">вже сьогодні!</span>
             </p>
-            <button className="px-8 py-3 bg-[#0F5132] text-white font-bold rounded-full hover:bg-[#0b3d26] transition-colors shadow-lg">
+            <button className="px-8 py-3 bg-[#1B2A4A] text-white font-bold rounded-full hover:bg-[#152238] transition-colors shadow-lg">
               Зв'язатися з нами
             </button>
             
@@ -75,7 +75,7 @@ export default function Calculator() {
                    <button 
                      onClick={() => setStationType("ground")}
                      className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-colors
-                       ${stationType === "ground" ? "border-green-100 bg-green-50 text-green-700" : "border-gray-100 text-gray-400 hover:border-green-100 hover:text-green-700"}
+                       ${stationType === "ground" ? "border-[#E8922D] bg-orange-50 text-[#E8922D]" : "border-gray-100 text-gray-400 hover:border-[#E8922D] hover:text-[#E8922D]"}
                      `}
                    >
                       <Sun className="mb-2" />
@@ -84,7 +84,7 @@ export default function Calculator() {
                    <button 
                      onClick={() => setStationType("roof")}
                      className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-colors
-                       ${stationType === "roof" ? "border-green-100 bg-green-50 text-green-700" : "border-gray-100 text-gray-400 hover:border-green-100 hover:text-green-700"}
+                       ${stationType === "roof" ? "border-[#E8922D] bg-orange-50 text-[#E8922D]" : "border-gray-100 text-gray-400 hover:border-[#E8922D] hover:text-[#E8922D]"}
                      `}
                    >
                       <Home className="mb-2" />
@@ -93,7 +93,7 @@ export default function Calculator() {
                    <button 
                      onClick={() => setStationType("membrane")}
                      className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-colors
-                       ${stationType === "membrane" ? "border-green-100 bg-green-50 text-green-700" : "border-gray-100 text-gray-400 hover:border-green-100 hover:text-green-700"}
+                       ${stationType === "membrane" ? "border-[#E8922D] bg-orange-50 text-[#E8922D]" : "border-gray-100 text-gray-400 hover:border-[#E8922D] hover:text-[#E8922D]"}
                      `}
                    >
                       <Layers className="mb-2" />
@@ -116,7 +116,7 @@ export default function Calculator() {
                            step="1"
                            value={power} 
                            onChange={(e) => setPower(Number(e.target.value))}
-                           className="w-full h-1 bg-gray-200 rounded-full appearance-none cursor-pointer accent-[#84cc16]"
+                           className="w-full h-1 bg-gray-200 rounded-full appearance-none cursor-pointer accent-[#E8922D]"
                          />
                          <div className="text-center font-bold text-xl mt-2">{power} кВт</div>
                       </div>
@@ -135,7 +135,7 @@ export default function Calculator() {
                            step="1"
                            value={years} 
                            onChange={(e) => setYears(Number(e.target.value))}
-                           className="w-full h-1 bg-gray-200 rounded-full appearance-none cursor-pointer accent-[#84cc16]"
+                           className="w-full h-1 bg-gray-200 rounded-full appearance-none cursor-pointer accent-[#E8922D]"
                          />
                          <div className="text-center font-bold text-xl mt-2">{years}</div>
                       </div>
@@ -150,7 +150,7 @@ export default function Calculator() {
                          type="number" 
                          value={elecPrice} 
                          onChange={(e) => setElecPrice(Number(e.target.value))}
-                         className="font-bold text-black text-right w-20 bg-transparent focus:outline-none focus:border-b focus:border-green-500"
+                         className="font-bold text-black text-right w-20 bg-transparent focus:outline-none focus:border-b focus:border-[#E8922D]"
                        />
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-gray-100">
@@ -159,7 +159,7 @@ export default function Calculator() {
                          type="number" 
                          value={exchangeRate} 
                          onChange={(e) => setExchangeRate(Number(e.target.value))}
-                         className="font-bold text-black text-right w-20 bg-transparent focus:outline-none focus:border-b focus:border-green-500"
+                         className="font-bold text-black text-right w-20 bg-transparent focus:outline-none focus:border-b focus:border-[#E8922D]"
                        />
                     </div>
                 </div>
@@ -182,7 +182,7 @@ export default function Calculator() {
 
                 <div className="flex justify-between items-center">
                    <div className="flex items-center gap-2">
-                      <div className="text-[#84cc16]">
+                      <div className="text-[#E8922D]">
                          <Sun size={20} />
                       </div>
                       <span className="text-xs text-gray-500">

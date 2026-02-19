@@ -52,7 +52,7 @@ export default function Projects() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors leading-tight">
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors leading-tight">
                 {project.title}
               </h3>
             </div>

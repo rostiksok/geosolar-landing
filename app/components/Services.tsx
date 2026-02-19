@@ -2,56 +2,54 @@ export default function Services() {
   const steps = [
     {
       id: "01",
-      title: "Підготовка проєкту «під ключ»",
-      description: "Беремо на себе всі етапи – від ідеї до введення в експлуатацію."
+      title: "Геодезичне знімання ділянки",
+      description: "Професійно знімаємо ділянку для розрахунку ідеальних кутів нахилу та уникнення затінень. Кожен ватт працюватиме на вас."
     },
     {
       id: "02",
-      title: "Розрахунок економічної доцільності",
-      description: "Аналізуємо потреби та пропонуємо фінансово вигідні рішення для швидкої окупності."
+      title: "Розрахунок оптимального розміщення",
+      description: "На основі геодезичних даних створюємо модель станції з максимальною генерацією та швидкою окупністю."
     },
     {
       id: "03",
-      title: "Технічне проєктування",
-      description: "Розробляємо детальний інженерний план з урахуванням технологічних особливостей."
+      title: "Технічне проєктування СЕС",
+      description: "Розробляємо детальний інженерний план з підбором обладнання Huawei та Longi під ваші потреби."
     },
     {
       id: "04",
       title: "Підбір та постачання обладнання",
-      description: "Пропонуємо сертифіковані компоненти від провідних виробників."
+      description: "Постачаємо сертифіковані інвертори Huawei SUN2000 (5–125 кВт) та панелі Longi Hi-MO X6 615W з ККД 23.3%."
     },
     {
       id: "05",
-      title: "Монтаж і налаштування",
-      description: "Наші фахівці швидко та професійно виконують усі роботи."
+      title: "Монтаж та підключення",
+      description: "Виконуємо якісний монтаж наземних, дахових та мембранних станцій, підключаємо систему до мережі."
     },
     {
       id: "06",
-      title: "Юридичний супровід",
-      description: "Допомагаємо з дозволами та підключенням до мережі, забезпечуючи легальність роботи."
+      title: "Оформлення «Зеленого тарифу»",
+      description: "Повний юридичний супровід — від дозволів до підключення та оформлення «Зеленого тарифу» для стабільного доходу."
     }
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-16 max-w-4xl">
-          КОМПЛЕКСНИЙ ПІДХІД – <span className="text-green-700">ПОВНИЙ ЦИКЛ ПОСЛУГ</span> ДЛЯ ВАШОГО ПРОЄКТУ
+          ВІД ДІЛЯНКИ ДО РОЗЕТКИ — <span className="text-[#E8922D]">ПОВНИЙ ЦИКЛ ПОСЛУГ</span> ДЛЯ ВАШОГО ПРОЄКТУ
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left Side: Isometric Image */}
           <div className="w-full lg:w-1/2">
-             {/* Placeholder for the 3D Isometric Building */}
-  
-            <img src="https://nrg.com.ua/wp-content/uploads/2025/03/group-3909-png.webp" alt="" />
+            <img src="https://nrg.com.ua/wp-content/uploads/2025/03/group-3909-png.webp" alt="Схема сонячної електростанції" />
           </div>
 
           {/* Right Side: Steps List */}
           <div className="w-full lg:w-1/2 space-y-8">
              {steps.map((step) => (
                <div key={step.id} className="flex gap-6">
-                 <div className="flex-shrink-0 w-10 text-green-700 font-bold text-xl pt-1">
+                 <div className="flex-shrink-0 w-10 text-[#E8922D] font-bold text-xl pt-1">
                    {step.id}
                  </div>
                  <div>

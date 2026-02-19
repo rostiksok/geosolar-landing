@@ -14,11 +14,12 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-3xl font-bold tracking-tighter text-black">
-                GeoSolar
-              </span>
-              <div className="h-1 w-12 bg-gradient-to-r from-blue-600 via-red-500 to-green-500 rounded-full mt-8 absolute"></div>
+            <Link href="/" className="flex items-center">
+              <img 
+                src="/logo.jpg" 
+                alt="GeoSolar Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </Link>
           </div>
 
@@ -27,42 +28,42 @@ export default function Header() {
             <Link
               href="/"
               onClick={(e) => scrollToContact(e, "home")}
-              className="text-green-700 font-bold hover:text-green-800 transition-colors"
+              className="text-[#E8922D] font-bold hover:text-[#d17f1f] transition-colors"
             >
               Головна
             </Link>
             <Link
               href="#about"
               onClick={(e) => scrollToContact(e, "about")}
-              className="text-gray-700 font-medium hover:text-green-700 transition-colors"
+              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
             >
               Про нас
             </Link>
             <Link
               href="#projects"
               onClick={(e) => scrollToContact(e, "projects")}
-              className="text-gray-700 font-medium hover:text-green-700 transition-colors"
+              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
             >
               Проєкти
             </Link>
             <Link
               href="#products"
               onClick={(e) => scrollToContact(e, "products")}
-              className="text-gray-700 font-medium hover:text-green-700 transition-colors"
+              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
             >
-              Продукти
+              Обладнання
             </Link>
             <Link
               href="#news"
               onClick={(e) => scrollToContact(e, "news")}
-              className="text-gray-700 font-medium hover:text-green-700 transition-colors"
+              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
             >
               Новини
             </Link>
             <Link
               href="#contacts"
               onClick={(e) => scrollToContact(e, "contacts")}
-              className="text-gray-700 font-medium hover:text-green-700 transition-colors"
+              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
             >
               Контакти
             </Link>
@@ -71,8 +72,8 @@ export default function Header() {
           {/* Contact Info & Lang */}
           <a href="https://wa.me/380682808282" target="_blank" className="hidden md:flex items-center space-x-4">
             <div className="font-bold text-gray-800">+380 68 280 82 82</div>
-            <div className="p-2 rounded-full bg-green-100 hover:bg-green-200 transition-colors">
-              <Phone className="w-5 h-5 text-green-700" />
+            <div className="p-2 rounded-full bg-orange-100 hover:bg-orange-200 transition-colors">
+              <Phone className="w-5 h-5 text-[#E8922D]" />
             </div>
           </a>
 
@@ -80,7 +81,7 @@ export default function Header() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-700 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#E8922D] focus:outline-none"
             >
               {isOpen ? (
                 <X className="block h-6 w-6" />
@@ -100,20 +101,20 @@ export default function Header() {
               "Головна",
               "Про нас",
               "Проєкти",
-              "Продукти",
+              "Обладнання",
               "Новини",
               "Контакти",
             ].map((item) => (
               <a
                 key={item}
                 href={`#${item === "Головна" ? "" : item.toLowerCase().replace(" ", "-")}`}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-700 hover:bg-gray-50"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#E8922D] hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 {item}
               </a>
             ))}
-            <div className="px-3 py-2 text-green-700 font-bold">
+            <div className="px-3 py-2 text-[#E8922D] font-bold">
               +380 68 280 82 82
             </div>
           </div>

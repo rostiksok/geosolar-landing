@@ -2,74 +2,104 @@
 import { useState } from "react";
 
 const categories = [
-  { id: "pv-module", name: "PV Module" },
-  { id: "182mm", name: "182mm PV Module" },
-  { id: "full-screen", name: "Full-Screen PV Module" },
-  { id: "topcon", name: "TOPCon PV Module" },
-  { id: "solar-unit", name: "Solar Unit" },
-  { id: "colored", name: "Colored" },
+  { id: "inverters", name: "Інвертори Huawei" },
+  { id: "panels", name: "Панелі Longi" },
+  { id: "systems", name: "Комплексні рішення" },
 ];
 
 const products = [
   {
     id: 1,
-    name: "DHN-54R20/FS(CB/RB/MB/AB)",
-    description: "Colored Double Glass PV Module",
-    power: "380-430W",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-13.04.25-2.webp",
+    name: "Huawei SUN2000-5KTL-M1",
+    description: "Мережевий інвертор для приватних домогосподарств",
+    power: "5 кВт",
+    category: "inverters",
+    badge: null,
+    image: "/hero-img.png",
   },
   {
     id: 2,
-    name: "DHN-54R20/FS",
-    description: "Colored Double Glass PV Module",
-    power: "380-430W",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-12.51.09-1.webp",
+    name: "Huawei SUN2000-30KTL-M3",
+    description: "Мережевий інвертор для комерційних проєктів",
+    power: "30 кВт",
+    category: "inverters",
+    badge: "Популярний",
+    image: "/hero-img.png",
   },
   {
     id: 3,
-    name: "DHN-66Y18-DG-FS",
-    description: "TOPCon",
-    power: "700W to 725W",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-12.51.09-1.webp",
+    name: "Huawei SUN2000-100KTL-M2",
+    description: "Промисловий інвертор без вентиляторів, природне охолодження",
+    power: "100 кВт",
+    category: "inverters",
+    badge: null,
+    image: "/hero-img.png",
   },
   {
     id: 4,
-    name: "SolarUnit 800W",
-    description: "The World's First Integrated PV System",
-    power: "800W",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-12.51.09-1.webp",
+    name: "Huawei SUN2000-125KTL-M0",
+    description: "Інвертор максимальної потужності для промислових станцій",
+    power: "125 кВт",
+    category: "inverters",
+    badge: "MAX",
+    image: "/hero-img.png",
   },
   {
     id: 5,
-    name: "SolarUnit 1000W",
-    description: "The World's First Integrated PV System",
-    power: "1000W",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-12.51.09-1.webp",
+    name: "Longi Hi-MO X6 LR5-72HTH-615M",
+    description: "Монокристалічна панель з ККД 23.3% — максимум на сьогодні",
+    power: "615 Вт",
+    category: "panels",
+    badge: "TIER-1",
+    image: "/hero-img.png",
   },
   {
     id: 6,
-    name: "SolarUnit 1500W",
-    description: "The World's First Integrated PV System",
-    power: "1500W",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-12.51.09-1.webp",
+    name: "Longi Hi-MO 7 LR5-72HGD-580M",
+    description: "Двостороння панель для наземних та дахових станцій",
+    power: "580 Вт",
+    category: "panels",
+    badge: null,
+    image: "/hero-img.png",
+  },
+  {
+    id: 7,
+    name: "Комплект 30 кВт",
+    description: "Huawei SUN2000-30KTL + 49× Longi 615W. Для приватних осіб під «Зелений тариф»",
+    power: "30 кВт",
+    category: "systems",
+    badge: "Під ключ",
+    image: "/hero-img.png",
+  },
+  {
+    id: 8,
+    name: "Комплект 90 кВт",
+    description: "Huawei SUN2000-100KTL + 147× Longi 615W. Для малого бізнесу",
+    power: "90 кВт",
+    category: "systems",
+    badge: "Бізнес",
+    image: "/hero-img.png",
   },
 ];
 
 export default function Products() {
-  const [activeCategory, setActiveCategory] = useState("solar-unit");
+  const [activeCategory, setActiveCategory] = useState("inverters");
+
+  const filteredProducts = products.filter(p => p.category === activeCategory);
 
   return (
-    <section id="products" className="py-20 bg-gray-50">
+    <section id="products" className="py-20 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className="mt-2 text-4xl font-bold text-black uppercase">ПРОДУКТИ</h2>
+          <h2 className="mt-2 text-4xl font-bold text-black uppercase">ОБЛАДНАННЯ</h2>
+          <p className="text-gray-600 mt-2">Працюємо виключно з обладнанням Tier-1 для максимальної надійності та генерації</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <div className="w-full lg:w-64 flex-shrink-0">
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-               <div className="bg-[#0F5132] text-white font-bold px-6 py-4">
+               <div className="bg-[#1B2A4A] text-white font-bold px-6 py-4">
                   Категорії
                </div>
                <nav className="flex flex-col">
@@ -79,7 +109,7 @@ export default function Products() {
                       onClick={() => setActiveCategory(category.id)}
                       className={`text-left px-6 py-4 font-medium transition-colors border-b border-gray-100 last:border-0 hover:bg-gray-50
                         ${activeCategory === category.id 
-                          ? "text-green-700 bg-green-50 border-l-4 border-l-[#0F5132]" 
+                          ? "text-[#E8922D] bg-orange-50 border-l-4 border-l-[#E8922D]" 
                           : "text-gray-700 border-l-4 border-l-transparent"
                         }`}
                     >
@@ -93,7 +123,7 @@ export default function Products() {
           {/* Product Grid */}
           <div className="flex-1">
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {products.map((product) => (
+                {filteredProducts.map((product) => (
                   <div key={product.id} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow group">
                     <div className="aspect-square bg-gray-100 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
                       <img 
@@ -101,17 +131,16 @@ export default function Products() {
                         alt={product.name} 
                         className="w-full h-full object-cover"
                       />
-                      {/* Badge example */}
-                      {product.name.includes("TOPCon") && (
-                         <span className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">TIER1</span>
+                      {product.badge && (
+                         <span className="absolute top-4 right-4 bg-[#E8922D] text-white text-xs font-bold px-2 py-1 rounded">{product.badge}</span>
                       )}
                     </div>
                     <div className="space-y-2">
-                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                        {product.name.split(" ")[0]}...
+                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors">
+                        {product.name}
                       </h3>
                       <p className="text-sm text-gray-500">{product.description}</p>
-                      <p className="text-red-500 font-bold block">{product.power}</p>
+                      <p className="text-[#E8922D] font-bold block">{product.power}</p>
                     </div>
                   </div>
                 ))}

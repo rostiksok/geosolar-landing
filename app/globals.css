@@ -7,8 +7,10 @@ html {
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-green: #0F5132; /* Deep green from screenshots */
-  --secondary-green: #15803d; /* Lighter green */
+  --primary-navy: #1B2A4A;
+  --accent-orange: #E8922D;
+  --secondary-green: #2A7F62;
+  --cream-bg: #FFF8F0;
   --accent-gray: #f4f4f5;
 }
 

@@ -1,17 +1,17 @@
 const news = [
   {
     id: 1,
-    date: "28.03.2025",
-    title: "DAH Solar на Solar & Storage Live 2024: Відкриваємо майбутнє разом!",
-    excerpt: "DAH Solar бере участь у провідній виставці Solar & Storage Live, що проходить у The NEC, Бірмінгем...",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-13.04.25-2.webp",
+    date: "15.02.2026",
+    title: "Чому 30 кВт на Huawei + Longi 615W — це найкраща інвестиція 2026 року?",
+    excerpt: "Панелі Longi 615 Вт мають ККД 23.3% — це максимум на сьогодні. Інвертор Huawei SUN2000 працює без вентиляторів, що виключає поломки. Завдяки точному геодезичному зніманню від GeoSolar, ви повертаєте інвестиції менш ніж за 4 роки.",
+    image: "/hero-img.png",
   },
   {
     id: 2,
-    date: "28.03.2025",
-    title: "DAH Solar на Intersolar 2024: Інновації, які ведуть у майбутнє",
-    excerpt: "На виставці Intersolar 2024 DAH Solar з гордістю представили новітні досягнення в галузі...",
-    image: "https://nrg.com.ua/wp-content/uploads/2024/11/whatsapp-image-2024-11-08-at-12.51.09-1.webp",
+    date: "10.02.2026",
+    title: "GeoSolar: Від ділянки до розетки — як працює наш підхід",
+    excerpt: "Все починається з точних геодезичних вимірювань. Ми знімаємо ділянку, підбираємо обладнання Huawei та Longi, виконуємо монтаж та оформлюємо «Зелений тариф». Проєкти від 30 кВт до 1000 кВт.",
+    image: "/about-image.webp",
   },
 ];
 
@@ -20,7 +20,7 @@ export default function News() {
     <section id="news" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h2 className="mt-2 text-4xl font-bold text-black uppercase">НОВИНИ В СВІТІ ЕНЕРГЕТИКИ</h2>
+          <h2 className="mt-2 text-4xl font-bold text-black uppercase">НОВИНИ ТА ПОРАДИ</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -35,8 +35,8 @@ export default function News() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
               </div>
               <div className="space-y-3">
-                <span className="text-green-700 font-bold text-sm bg-green-50 px-2 py-1 rounded">{item.date}</span>
-                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
+                <span className="text-[#E8922D] font-bold text-sm bg-orange-50 px-2 py-1 rounded">{item.date}</span>
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
