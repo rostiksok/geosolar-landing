@@ -1,12 +1,44 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Phone, User } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { scrollToContact } from "../utils/scrollTo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "projects", "products", "news", "contacts"];
+      
+      // Find the current section
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // Check if the section is in the middle of the viewport
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = [
+    { label: "Головна", id: "home" },
+    { label: "Про нас", id: "about" },
+    { label: "Проєкти", id: "projects" },
+    { label: "Обладнання", id: "products" },
+    { label: "Новини", id: "news" },
+    { label: "Контакти", id: "contacts" },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
@@ -25,48 +57,23 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link
-              href="/"
-              onClick={(e) => scrollToContact(e, "home")}
-              className="text-[#E8922D] font-bold hover:text-[#d17f1f] transition-colors"
-            >
-              Головна
-            </Link>
-            <Link
-              href="#about"
-              onClick={(e) => scrollToContact(e, "about")}
-              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
-            >
-              Про нас
-            </Link>
-            <Link
-              href="#projects"
-              onClick={(e) => scrollToContact(e, "projects")}
-              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
-            >
-              Проєкти
-            </Link>
-            <Link
-              href="#products"
-              onClick={(e) => scrollToContact(e, "products")}
-              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
-            >
-              Обладнання
-            </Link>
-            <Link
-              href="#news"
-              onClick={(e) => scrollToContact(e, "news")}
-              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
-            >
-              Новини
-            </Link>
-            <Link
-              href="#contacts"
-              onClick={(e) => scrollToContact(e, "contacts")}
-              className="text-gray-700 font-medium hover:text-[#E8922D] transition-colors"
-            >
-              Контакти
-            </Link>
+            {navItems.map((item) => (
+              <Link
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  scrollToContact(e, item.id);
+                  setActiveSection(item.id);
+                }}
+                className={`font-medium transition-colors ${
+                  activeSection === item.id
+                    ? "text-[#E8922D] font-bold"
+                    : "text-gray-700 hover:text-[#E8922D]"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Contact Info & Lang */}
@@ -97,21 +104,19 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {[
-              { label: "Головна", id: "home" },
-              { label: "Про нас", id: "about" },
-              { label: "Проєкти", id: "projects" },
-              { label: "Обладнання", id: "products" },
-              { label: "Новини", id: "news" },
-              { label: "Контакти", id: "contacts" },
-            ].map((item) => (
+            {navItems.map((item) => (
               <a
                 key={item.label}
                 href={`#${item.id}`}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#E8922D] hover:bg-gray-50"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  activeSection === item.id
+                    ? "text-[#E8922D] bg-orange-50"
+                    : "text-gray-700 hover:text-[#E8922D] hover:bg-gray-50"
+                }`}
                 onClick={(e) => {
                   setIsOpen(false);
                   scrollToContact(e, item.id);
+                  setActiveSection(item.id);
                 }}
               >
                 {item.label}
@@ -123,3 +128,4 @@ export default function Header() {
     </header>
   );
 }
+
