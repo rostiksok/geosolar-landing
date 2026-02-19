@@ -88,7 +88,7 @@ export default function Products() {
   const filteredProducts = products.filter(p => p.category === activeCategory);
 
   return (
-    <section id="products" className="py-20 bg-[#FFF8F0]">
+    <section id="products" className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="mt-2 text-4xl font-bold text-black uppercase">ОБЛАДНАННЯ</h2>

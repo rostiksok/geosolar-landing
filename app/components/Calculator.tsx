@@ -34,7 +34,7 @@ export default function Calculator() {
   const paybackPeriod = annualRevenueUSD > 0 ? investment / annualRevenueUSD : 0;
 
   return (
-    <section id="calculator" className="py-16 bg-white relative overflow-hidden">
+    <section id="calculator" className="py-8 bg-white relative overflow-hidden">
        {/* Background decorative elements */}
        <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-l from-orange-50 to-transparent pointer-events-none"></div>
 
@@ -42,15 +42,15 @@ export default function Calculator() {
         <div className="flex flex-col lg:flex-row gap-16">
           
           {/* Left Side: Text & CTA */}
-          <div className="w-full lg:w-1/2 pt-8">
+          <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-4">
               КАЛЬКУЛЯТОР ПРИБУТКОВОСТІ <br />
               <span className="text-[#E8922D]">СОНЯЧНОЇ СТАНЦІЇ</span>
             </h2>
-            <div className="flex gap-2 mb-8">
+            {/* <div className="flex gap-2 mb-8">
                <div className="w-12 h-6 bg-[#1B2A4A] rounded-sm"></div>
                <div className="w-12 h-6 bg-[#E8922D] rounded-sm"></div>
-            </div>
+            </div> */}
             <p className="text-gray-600 mb-8">
               Оптимізуйте витрати на електроенергію та <span className="font-bold text-black">зробіть вигідний внесок</span> у чисте майбутнє <span className="font-bold text-black">вже сьогодні!</span>
             </p>
@@ -60,10 +60,6 @@ export default function Calculator() {
             >
               Зв'язатися з нами
             </button>
-            
-            <div className="mt-12">
-               {/* 3D Factory/Plant Image placeholder or image from user if avail later */}
-            </div>
           </div>
 
           {/* Right Side: Calculator Card */}

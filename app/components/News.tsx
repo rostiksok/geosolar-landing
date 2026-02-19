@@ -17,7 +17,7 @@ const news = [
 
 export default function News() {
   return (
-    <section id="news" className="py-20 bg-white">
+    <section id="news" className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <h2 className="mt-2 text-4xl font-bold text-black uppercase">НОВИНИ ТА ПОРАДИ</h2>

@@ -33,7 +33,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 bg-[#FFF8F0]">
+    <section className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-16 max-w-4xl">
           ВІД ДІЛЯНКИ ДО РОЗЕТКИ — <span className="text-[#E8922D]">ПОВНИЙ ЦИКЛ ПОСЛУГ</span> ДЛЯ ВАШОГО ПРОЄКТУ

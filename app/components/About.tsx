@@ -4,7 +4,7 @@ import { scrollToContact } from "../utils/scrollTo";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-[#FFF8F0]">
+    <section id="about" className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
 
         {/* Section 1: Reliable Partner */}
@@ -35,7 +35,7 @@ export default function About() {
 
         {/* Section 2: About GeoSolar */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-6 ">
             ПРО <span className="text-[#E8922D]">GEOSOLAR</span>
           </h2>
 

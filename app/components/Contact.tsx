@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Phone, Mail, Loader2, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Loader2, CheckCircle2, MapPin } from "lucide-react";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -51,25 +51,18 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacts" className="relative py-16 overflow-hidden bg-gray-50">
-      {/* Background Image */}
-      <div 
-        className="absolute bottom-0 left-0 right-0 h-[400px] w-full z-0 pointer-events-none"
-        style={{
-          backgroundSize: "cover",
-          backgroundPosition: "bottom center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+    <section id="contacts" className="relative py-8 overflow-hidden bg-white">
+      {/* Background Decorative Element */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-orange-50/50 -skew-x-12 transform translate-x-1/2 pointer-events-none z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Side: Title + Paragraph + Form */}
-          <div>
+          <div className="bg-white p-6 md:p-0 rounded-3xl shadow-xl shadow-gray-200/50 md:shadow-none border border-gray-100 md:border-none">
             <h2 className="text-4xl md:text-5xl font-bold text-black uppercase mb-4">
               ЗВ'ЯЗАТИСЯ <span className="text-[#E8922D]">З НАМИ</span>
             </h2>
-            <p className="text-gray-600 mb-12 max-w-lg">
+            <p className="text-gray-600 mb-10 max-w-lg">
               Заповніть форму або напишіть нам на офіційну пошту, і ми зв'яжемося з вами найближчим часом.
             </p>
 
@@ -87,49 +80,51 @@ export default function Contact() {
               </div>
             ) : (
               <form className="space-y-6" onSubmit={handleSubmit}>
-                <div>
-                  <input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Ім'я та прізвище"
-                    className="w-full bg-transparent border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-[#E8922D] placeholder-gray-500 transition-colors"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="Номер телефону"
-                    className="w-full bg-transparent border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-[#E8922D] placeholder-gray-500 transition-colors"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="E-mail"
-                    className="w-full bg-transparent border-b border-gray-300 py-3 text-gray-900 focus:outline-none focus:border-[#E8922D] placeholder-gray-500 transition-colors"
-                  />
+                <div className="space-y-4">
+                   <div className="relative group">
+                      <input
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder="Ім'я та прізвище"
+                        className="w-full bg-transparent border-b-2 border-gray-100 py-4 text-gray-900 focus:outline-none focus:border-[#E8922D] placeholder-gray-400 transition-all font-medium"
+                      />
+                   </div>
+                   <div className="relative group">
+                      <input
+                        type="tel"
+                        required
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        placeholder="Номер телефону"
+                        className="w-full bg-transparent border-b-2 border-gray-100 py-4 text-gray-900 focus:outline-none focus:border-[#E8922D] placeholder-gray-400 transition-all font-medium"
+                      />
+                   </div>
+                   <div className="relative group">
+                      <input
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder="E-mail"
+                        className="w-full bg-transparent border-b-2 border-gray-100 py-4 text-gray-900 focus:outline-none focus:border-[#E8922D] placeholder-gray-400 transition-all font-medium"
+                      />
+                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 mt-8 group">
-                  <div className="relative flex items-center cursor-pointer">
+                <div className="flex items-center gap-4 mt-8 group cursor-pointer" onClick={() => setFormData({ ...formData, consent: !formData.consent })}>
+                  <div className="relative flex items-center justify-center flex-shrink-0">
                     <input
                       id="consent"
                       type="checkbox"
                       required
                       checked={formData.consent}
                       onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
-                      className="peer h-5 w-5 appearance-none rounded border-2 border-gray-300 checked:bg-[#E8922D] checked:border-[#E8922D] focus:ring-2 focus:ring-[#E8922D]/20 focus:outline-none transition-all cursor-pointer"
+                      className="peer h-6 w-6 appearance-none rounded-lg border-2 border-gray-200 checked:bg-[#E8922D] checked:border-[#E8922D] focus:ring-4 focus:ring-[#E8922D]/10 transition-all cursor-pointer"
                     />
                     <svg
-                      className="absolute h-3 w-3 pointer-events-none hidden peer-checked:block text-white left-1 top-1"
+                      className="absolute h-3.5 w-3.5 pointer-events-none hidden peer-checked:block text-white"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -141,58 +136,89 @@ export default function Contact() {
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                   </div>
-                  <label htmlFor="consent" className="text-sm text-gray-600 cursor-pointer select-none group-hover:text-gray-900 transition-colors">
-                    Даю згоду на обробку персональних даних
+                  <label htmlFor="consent" className="text-sm text-gray-500 cursor-pointer select-none group-hover:text-gray-900 transition-colors leading-tight">
+                    Я погоджуюся на обробку персональних даних для зв’язку зі мною
                   </label>
                 </div>
 
                 {status === "error" && (
-                  <p className="text-red-500 text-sm">Виникла помилка при відправці. Спробуйте ще раз або напишіть нам на пошту.</p>
+                  <p className="text-red-500 text-sm font-medium">Виникла помилка при відправці. Спробуйте ще раз або напишіть нам на пошту.</p>
                 )}
 
                 <button
                   type="submit"
                   disabled={status === "loading" || !formData.consent}
-                  className={`mt-8 w-full sm:w-auto px-10 py-4 font-bold rounded-full transition-all flex items-center justify-center gap-2
+                  className={`mt-10 w-full sm:w-auto px-12 py-5 font-bold rounded-full transition-all flex items-center justify-center gap-3 text-lg
                     ${formData.consent 
-                      ? "bg-[#1B2A4A] text-white hover:bg-[#152238] shadow-lg shadow-navy-900/20 active:scale-95 active:shadow-inner" 
-                      : "bg-gray-200 text-gray-400 cursor-not-allowed"}
-                    ${status === "loading" ? "opacity-80 pointer-events-none" : ""}`}
+                      ? "bg-[#1B2A4A] text-white hover:bg-[#152238] shadow-xl shadow-navy-900/20 active:scale-95" 
+                      : "bg-gray-100 text-gray-400 cursor-not-allowed"}
+                    ${status === "loading" ? "opacity-90 pointer-events-none" : ""}`}
                 >
                   {status === "loading" ? (
                     <>
-                      <Loader2 className="w-5 h-5 animate-spin" />
+                      <Loader2 className="w-6 h-6 animate-spin text-orange-400" />
                       Відправляємо...
                     </>
-                  ) : "Зв'язатися з нами"}
+                  ) : "Надіслати запит"}
                 </button>
               </form>
             )}
           </div>
 
-          {/* Right Side: Contact Info & House Visual */}
-          <div className="relative">
-             <div className="space-y-6 mb-12">
-                <div className="text-gray-800 space-y-2">
-                   <p className="font-medium">село Великі Гаї, вул. Об'їзна, 3-А, Тернопіль,</p>
-                   <p className="font-medium">Тернопільська область, Україна, 47722</p>
-                </div>
-
-                <div className="space-y-4">
-                  <a href="https://wa.me/380689364540" target="_blank" className="flex items-center gap-3 group">
-                     <div className="w-10 h-10 rounded-full border border-[#E8922D] flex items-center justify-center text-[#E8922D] group-hover:bg-[#E8922D] group-hover:text-white transition-all">
-                        <Phone size={20} />
-                     </div>
-                     <span className="text-gray-800 font-medium group-hover:text-[#E8922D] transition-colors">+380 (68) 936 45 40</span>
-                  </a>
-                   <a href="mailto:office@geosolar.com.ua" target="_blank" className="flex items-center gap-3 group">
-                     <div className="w-10 h-10 rounded-full border border-[#E8922D] flex items-center justify-center text-[#E8922D] group-hover:bg-[#E8922D] group-hover:text-white transition-all">
-                        <Mail size={20} />
-                     </div>
-                     <span className="text-gray-800 font-medium group-hover:text-[#E8922D] transition-colors">office@geosolar.com.ua</span>
-                  </a>
+          {/* Right Side: Contact Info & Interactive Cards */}
+          <div className="grid grid-cols-1 gap-6">
+             {/* Address Card */}
+             <div className="bg-white p-8 rounded-[40px] shadow-2xl shadow-gray-200/50 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
+                <div className="flex items-start gap-6">
+                   <div className="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
+                      <MapPin size={28} />
+                   </div>
+                   <div className="space-y-2">
+                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Адреса офісу</h4>
+                      <p className="text-gray-900 font-bold text-lg leading-snug">
+                         село Великі Гаї, вул. Об'їзна, 3-А, Тернопіль, <br />
+                         Тернопільська область, 47722
+                      </p>
+                      <a 
+                        href="https://www.google.com/maps/search/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D1%96+%D0%93%D0%B0%D1%97,+%D0%B2%D1%83%D0%BB.+%D0%9E%D0%B1'%D1%97%D0%B7%D0%BD%D0%B0,+3-%D0%90" 
+                        target="_blank" 
+                        className="inline-block text-[#E8922D] font-bold text-sm hover:underline mt-2"
+                      >
+                         Відкрити на карті →
+                      </a>
+                   </div>
                 </div>
              </div>
+
+             {/* Phone Card */}
+             <a href="tel:+380689364540" className="bg-white p-8 rounded-[40px] shadow-xl shadow-gray-100 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
+                <div className="flex items-center gap-6">
+                   <div className="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
+                      <Phone size={28} />
+                   </div>
+                   <div>
+                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest">Гаряча лінія</h4>
+                      <div className="text-2xl font-black text-gray-900 group-hover:text-[#E8922D] transition-colors">
+                         +380 (68) 936 45 40
+                      </div>
+                   </div>
+                </div>
+             </a>
+
+             {/* Email Card */}
+             <a href="mailto:office@geosolar.com.ua" className="bg-white p-8 rounded-[40px] shadow-xl shadow-gray-100 border border-gray-50 group hover:border-orange-100 transition-all duration-500">
+                <div className="flex items-center gap-6">
+                   <div className="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-[#E8922D] flex-shrink-0 group-hover:bg-[#E8922D] group-hover:text-white transition-all duration-500">
+                      <Mail size={28} />
+                   </div>
+                   <div>
+                      <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest">E-mail запити</h4>
+                      <div className="text-xl font-bold text-gray-900 group-hover:text-[#E8922D] transition-colors break-all">
+                         office@geosolar.com.ua
+                      </div>
+                   </div>
+                </div>
+             </a>
           </div>
         </div>
       </div>
