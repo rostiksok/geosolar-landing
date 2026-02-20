@@ -61,7 +61,7 @@ export default function Solutions() {
                 Проєкт
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                 Підбираємо найкраще обладнання — інвертори Huawei SUN2000 та панелі Longi Hi-MO X6 615W. Це «золотий стандарт» надійності та генерації.
+                 Підбираємо найкраще обладнання — інвертори Huawei та панелі Longi. Це «золотий стандарт» надійності та генерації.
               </p>
            </div>
 

@@ -28,7 +28,7 @@ export default function ConsumerRights() {
             <ul className="list-disc pl-6 space-y-2">
               <li>Інвертори Huawei SUN2000 — гарантія 10 років від виробника</li>
               <li>Панелі Longi Hi-MO — гарантія 12 років на продукт, 30 років на потужність (не менше 87.4%)</li>
-              <li>Монтажні роботи — гарантія GeoSolar 5 років</li>
+              <li>Монтажні роботи — гарантія <span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span> 5 років</li>
             </ul>
             <p className="mt-4">
               У разі виявлення дефекту обладнання протягом гарантійного терміну, ми забезпечуємо безкоштовну заміну або ремонт.
@@ -49,7 +49,7 @@ export default function ConsumerRights() {
             <p>Якщо у вас є претензії щодо якості товарів або послуг, ви можете звернутися:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Електронна пошта: <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a></li>
-              <li>Телефон: <a href="tel:+380689364540" className="text-[#E8922D] font-bold hover:underline">+380 (68) 936 45 40</a></li>
+              <li>Телефон: <a href="tel:+380979442265" className="text-[#E8922D] font-bold hover:underline">+380 (97) 944 22 65</a></li>
             </ul>
             <p className="mt-4">
               Ми гарантуємо розгляд кожного звернення протягом 10 робочих днів.
@@ -58,7 +58,7 @@ export default function ConsumerRights() {
 
           <section className="bg-[#FFF8F0] p-6 rounded-2xl">
             <p className="text-sm text-gray-600">
-              GeoSolar дотримується всіх вимог законодавства України щодо захисту прав споживачів. Ми цінуємо вашу довіру.
+              <span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span> дотримується всіх вимог законодавства України щодо захисту прав споживачів. Ми цінуємо вашу довіру.
             </p>
           </section>
         </div>

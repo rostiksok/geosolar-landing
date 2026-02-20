@@ -18,12 +18,12 @@ export default function Services() {
     {
       id: "03",
       title: "Технічне проєктування СЕС",
-      description: "Розробляємо детальний інженерний план з підбором обладнання Huawei та Longi під ваші потреби."
+      description: "Розробляємо детальний інженерний план з підбором обладнання."
     },
     {
       id: "04",
       title: "Підбір та постачання обладнання",
-      description: "Постачаємо сертифіковані інвертори Huawei SUN2000 (5–125 кВт) та панелі Longi Hi-MO X6 615W з ККД 23.3%."
+      description: "Постачаємо сертифіковані інвертори Huawei, Deye, Solis та панелі Longi з ККД 23.3%."
     },
     {
       id: "05",
@@ -51,7 +51,7 @@ export default function Services() {
             <div className="absolute -inset-4 bg-orange-100/50 rounded-[40px] blur-2xl group-hover:bg-orange-200/50 transition-colors duration-500"></div>
             
             <img 
-              src="/vid_dilyanky.png" 
+              src="/schema.jpg" 
               alt="Схема сонячної електростанції" 
               className="relative z-10 w-full h-auto rounded-3xl shadow-2xl border-4 border-white hover:scale-[1.02] transition-transform duration-500" 
             />

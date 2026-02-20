@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <h4 className="font-bold text-[#1B2A4A] mb-5 text-sm uppercase tracking-wide">Контакти</h4>
             <div className="flex flex-col gap-4 text-sm text-gray-600">
-              <a href="tel:+380689364540" className="flex items-center justify-center md:justify-start gap-3 hover:text-[#E8922D] transition-colors">
+              <a href="tel:+380979442265" className="flex items-center justify-center md:justify-start gap-3 hover:text-[#E8922D] transition-colors">
                 <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0">
                   <Phone size={14} className="text-[#E8922D]" />
                 </div>
-                +380 (68) 936 45 40
+                +380 (97) 944 22 65
               </a>
               <a href="mailto:office@geosolar.com.ua" className="flex items-center justify-center md:justify-start gap-3 hover:text-[#E8922D] transition-colors">
                 <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0">

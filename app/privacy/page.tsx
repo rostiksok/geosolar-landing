@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">1. Загальні положення</h2>
             <p>
               Ця Політика конфіденційності визначає порядок збору, використання та захисту персональних даних,
-              наданих користувачами веб-сайту geosolar.com.ua (далі — «Сайт»), що належить ТОВ «GeoSolar» (далі — «Компанія»).
+              наданих користувачами веб-сайту geosolar.com.ua (далі — «Сайт»), що належить ТОВ «<span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span>» (далі — «Компанія»).
             </p>
           </section>
 
@@ -26,6 +26,8 @@ export default function PrivacyPolicy() {
               <li>Ім'я та прізвище</li>
               <li>Номер телефону</li>
               <li>Адреса електронної пошти</li>
+              <li>Адреса об'єкта</li>
+              <li>Кадастровий номер земельної ділянки (при наявності)</li>
             </ul>
           </section>
 
@@ -34,7 +36,7 @@ export default function PrivacyPolicy() {
             <p>Зібрані дані використовуються виключно для:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Зворотного зв'язку з клієнтом щодо запиту на консультацію або розрахунок проєкту</li>
-              <li>Надання інформації про послуги та обладнання GeoSolar</li>
+              <li>Надання інформації про послуги та обладнання <span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span></li>
               <li>Виконання договірних зобов'язань</li>
             </ul>
           </section>
@@ -70,7 +72,7 @@ export default function PrivacyPolicy() {
             <p>З питань конфіденційності зверніться до нас:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Електронна пошта: <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a></li>
-              <li>Телефон: <a href="tel:+380689364540" className="text-[#E8922D] font-bold hover:underline">+380 (68) 936 45 40</a></li>
+              <li>Телефон: <a href="tel:+380979442265" className="text-[#E8922D] font-bold hover:underline">+380 (97) 944 22 65</a></li>
             </ul>
           </section>
 

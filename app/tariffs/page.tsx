@@ -39,7 +39,7 @@ export default function Tariffs() {
                     <td className="border border-gray-200 px-4 py-3">За запитом</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="border border-gray-200 px-4 py-3">Longi Hi-MO X6 LR5-72HTH-615M</td>
+                    <td className="border border-gray-200 px-4 py-3">Longi LR5-72HTH-615M</td>
                     <td className="border border-gray-200 px-4 py-3">615 Вт</td>
                     <td className="border border-gray-200 px-4 py-3">За запитом</td>
                   </tr>
@@ -67,7 +67,7 @@ export default function Tariffs() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-200 px-4 py-3 font-medium">90 кВт (бізнес)</td>
-                    <td className="border border-gray-200 px-4 py-3">Huawei SUN2000-100KTL + 147× Longi 615W</td>
+                    <td className="border border-gray-200 px-4 py-3">Huawei SUN2000-100KTL + 162× Longi 615W</td>
                     <td className="border border-gray-200 px-4 py-3">За запитом</td>
                   </tr>
                 </tbody>
@@ -89,7 +89,7 @@ export default function Tariffs() {
             <p className="text-sm text-gray-600">
               Точну вартість обладнання та послуг для вашого проєкту можна отримати, звернувшись до нас за адресою{" "}
               <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a>{" "}
-              або зателефонувавши за номером <a href="tel:+380689364540" className="text-[#E8922D] font-bold hover:underline">+380 (68) 936 45 40</a>.
+              або зателефонувавши за номером <a href="tel:+380979442265" className="text-[#E8922D] font-bold hover:underline">+380 (97) 944 22 65</a>.
             </p>
           </section>
         </div>

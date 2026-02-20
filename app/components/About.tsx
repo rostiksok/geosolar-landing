@@ -39,8 +39,8 @@ export default function About() {
 
         {/* Section 2: About GeoSolar */}
         <div ref={sec2Ref}>
-          <h2 className={`text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-6 animate-fade-up ${sec2InView ? "in-view" : ""}`}>
-            ПРО <span className="text-[#E8922D]">GEOSOLAR</span>
+          <h2 className={`text-3xl md:text-5xl font-bold uppercase leading-tight mb-6 animate-fade-up ${sec2InView ? "in-view" : ""}`}>
+            ПРО <span className="text-[#1B2A4A]">GEO</span><span className="text-[#E8922D]">SOLAR</span>
           </h2>
 
           {/* <div className="flex gap-2 mb-8">
@@ -51,7 +51,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className={`space-y-5 text-gray-700 leading-relaxed animate-fade-right ${sec2InView ? "in-view" : ""}`}>
               <p>
-                <span className="font-bold text-black">GeoSolar</span> — це
+                <span className="font-bold"><span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span></span> — це
                 поєднання професійної геодезії та сучасних технологій сонячної
                 енергетики. Ми допомагаємо бізнесу та приватним домогосподарствам{" "}
                 <span className="font-bold text-black">
@@ -69,12 +69,12 @@ export default function About() {
               </p>
               <p>
                 Ми спеціалізуємося на проєктах потужністю від{" "}
-                <span className="font-bold text-black">30 кВт</span> (для
-                приватних осіб) до{" "}
-                <span className="font-bold text-black">90–1000 кВт</span> (для
+                <span className="font-bold text-black">5 кВт</span> (для
+                приватних осіб) та від {" "}
+                <span className="font-bold text-black">10 кВт</span> (для
                 бізнесу), використовуючи обладнання Tier-1:{" "}
                 <span className="font-bold text-black">
-                  інвертори Huawei та панелі Longi 615W
+                  інвертори Huawei, Solis, Deye та панелі Longi
                 </span>{" "}
                 з ККД 23.3%.
               </p>
@@ -103,8 +103,8 @@ export default function About() {
 
         {/* Section 3: Benefits */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-black uppercase leading-tight mb-12">
-            ЧОМУ <span className="text-[#E8922D]">GEOSOLAR</span>?
+          <h2 className="text-3xl md:text-5xl font-bold uppercase leading-tight mb-12">
+            ЧОМУ <span className="text-[#1B2A4A]">GEO</span><span className="text-[#E8922D]">SOLAR</span>?
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -133,7 +133,7 @@ export default function About() {
                   {
                     n: "02",
                     title: "Надійне обладнання Tier-1",
-                    desc: "Працюємо з інверторами Huawei SUN2000 (5–125 кВт) та високоефективними панелями Longi Hi-MO X6 615W з ККД 23.3%.",
+                    desc: "Працюємо з інверторами Huawei, Solis, Deye та високоефективними панелями Longi з ККД 23.3%.",
                   },
                   {
                     n: "03",

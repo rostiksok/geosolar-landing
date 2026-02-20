@@ -30,7 +30,7 @@ export default function Hero() {
             ЕНЕРГОНЕЗАЛЕЖНІСТЬ ВАШОГО БІЗНЕСУ ТА ДОМУ
           </p>
           <p className={`text-base md:text-lg text-gray-800 mb-10 max-w-2xl mx-auto animate-fade-up delay-300 ${inView ? "in-view" : ""}`}>
-            GeoSolar — поєднання професійної геодезії та сучасних технологій сонячної енергетики. 
+            <span className="font-bold"><span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span></span> — поєднання професійної геодезії та сучасних технологій сонячної енергетики. 
             Від точного виміру до запуску станції під «Зелений тариф».
           </p>
 

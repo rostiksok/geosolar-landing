@@ -14,8 +14,8 @@ export default function SupplyTerms() {
           <section>
             <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">1. Загальні положення</h2>
             <p>
-              ТОВ «GeoSolar» здійснює постачання обладнання для сонячних електростанцій на території України.
-              Усі товари сертифіковані та відповідають стандартам якості Tier-1.
+              ТОВ «<span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span>» здійснює постачання обладнання для сонячних електростанцій на території України.
+              Усі товари сертифіковані та відповідають стандартам.
             </p>
           </section>
 
@@ -23,8 +23,10 @@ export default function SupplyTerms() {
             <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">2. Обладнання</h2>
             <p>Ми постачаємо виключно сертифіковане обладнання від виробників:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li><strong>Huawei</strong> — мережеві інвертори серії SUN2000 потужністю від 5 до 125 кВт</li>
-              <li><strong>Longi Solar</strong> — монокристалічні панелі Hi-MO X6 та Hi-MO 7 потужністю до 615 Вт</li>
+              <li><strong>Huawei</strong> — мережеві інвертори серії SUN2000 потужністю від 5 кВт</li>
+              <li><strong>Longi Solar</strong> — монокристалічні панелі потужністю 435Вт до 650 Вт</li>
+              <li><strong>Solis</strong> — мережеві інвертори потужністю від 5 кВт</li>
+              <li><strong>Deye</strong> — мережеві інвертори потужністю від 5 кВт</li>
             </ul>
           </section>
 
@@ -42,8 +44,8 @@ export default function SupplyTerms() {
             <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">4. Доставка та монтаж</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>Доставка обладнання по всій Україні</li>
-              <li>Терміни доставки: 5–15 робочих днів залежно від наявності на складі</li>
-              <li>Монтаж виконується кваліфікованою бригадою GeoSolar</li>
+              <li>Терміни доставки: до 30 робочих днів залежно від наявності на складі</li>
+              <li>Монтаж виконується кваліфікованою бригадою <span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span></li>
               <li>Термін монтажу: від 3 до 14 днів залежно від потужності станції</li>
             </ul>
           </section>
@@ -52,8 +54,10 @@ export default function SupplyTerms() {
             <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">5. Гарантійні зобов'язання</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>Інвертори Huawei — гарантія виробника 10 років</li>
+              <li>Інвертори Deye — гарантія виробника до 10 років</li>
+              <li>Інвертори Solis — гарантія виробника 5 років</li>
               <li>Панелі Longi — гарантія виробника 12 років на продукт, 30 років на потужність</li>
-              <li>Монтажні роботи — гарантія GeoSolar 5 років</li>
+              <li>Монтажні роботи — гарантія <span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span> 5 років</li>
             </ul>
           </section>
 
