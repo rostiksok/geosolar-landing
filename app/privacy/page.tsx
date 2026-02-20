@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
 
           <section className="bg-[#FFF8F0] p-6 rounded-2xl">
             <p className="text-sm text-gray-600">
-              Дата останнього оновлення: 19 лютого 2026 року.
+              Дата останнього оновлення: 21 лютого 2026 року.
             </p>
           </section>
         </div>

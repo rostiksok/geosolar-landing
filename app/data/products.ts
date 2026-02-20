@@ -4,6 +4,7 @@ export const categories = [
   { id: "inverters", name: "Сонячні інвертори" },
   { id: "accessories", name: "Комплектуючі" },
   { id: "storage", name: "Накопичувачі електроенергії" },
+  { id: "mounting", name: "Системи кріплень" },
   { id: "batteries", name: "Акумулятори" },
 ];
 
