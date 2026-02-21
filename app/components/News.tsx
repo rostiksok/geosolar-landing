@@ -1,5 +1,6 @@
 "use client";
 import { useInView } from "../utils/useInView";
+import Image from "next/image";
 
 const news = [
   {
@@ -56,7 +57,7 @@ export default function News() {
               className={`group cursor-pointer animate-fade-up ${gridInView ? "in-view" : ""}`}
               style={{ transitionDelay: `${i * 150}ms` }}>
               <div className="relative aspect-video rounded-2xl overflow-hidden bg-gray-200 mb-6">
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                <Image src={item.image} alt={item.title} fill className="object-cover" />{" "}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
               </div>
               <div className="space-y-3">

@@ -28,7 +28,7 @@ export default function About() {
 
           <div className="relative h-64 md:h-[500px] w-full rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="https://static.vecteezy.com/system/resources/previews/054/878/636/non_2x/high-resolution-image-of-solar-farm-with-mountains-and-sunset-view-free-photo.jpeg 1748w, https://static.vecteezy.com/system/resources/previews/054/878/636/large_2x/high-resolution-image-of-solar-farm-with-mountains-and-sunset-view-free-photo.jpeg 3497w"
+              src="https://wallpapercave.com/wp/wp4041847.jpg"
               alt="GeoSolar — сонячна електростанція"
               className="w-full h-full object-cover"
             />
@@ -77,7 +77,7 @@ export default function About() {
             <div className={`grid grid-cols-2 gap-4 animate-fade-left ${sec2InView ? "in-view" : ""}`}>
               <div className="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-gray-200">
                 <img
-                  src="/about-image.webp"
+                  src="/firstaboutimg.png"
                   alt="Геодезичне знімання"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -87,7 +87,7 @@ export default function About() {
               </div>
               <div className="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-gray-200 mt-12">
                 <img
-                  src="/hero-img.png"
+                  src="/secondaboutimg.png"
                   alt="Сонячна станція GeoSolar"
                   className="w-full h-full object-cover"
                   onError={(e) => {

@@ -162,7 +162,7 @@ export const products = [
     category: "systems",
     badge: null,
     image:
-      "https://sun-energy.com.ua/image/cache/catalog/komplekti/gibrydna_elitna_10kwt_25sht/5kw-10kw-elit-min-min-550x550-241x208.png",
+      "https://sun-energy.com.ua/image/cache/catalog/komplekti/gibrydna_elitna_10kwt_25sht/5kw-hybrid-10kw-elit-min-min-550x550-550x550.png",
   },
   {
     id: 26,
@@ -1153,7 +1153,7 @@ export const products = [
     power: "5.12 кВт-год",
     category: "batteries",
     badge: null,
-    image: "https://deye.com.ua/wp-content/uploads/2025/07/%E5%9C%86%E5%B1%8F%E6%AD%A3%E9%9D%A2.jpg",
+    image: "https://images.prom.ua/7007917496_w640_h640_akumulyatorna-batareya-deye.jpg",
   },
   {
     id: 1002,
