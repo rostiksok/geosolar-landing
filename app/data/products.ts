@@ -39,7 +39,7 @@ export const products = [
   },
   {
     id: 12,
-    name: "Гібридна СЕС \"під ключ\" PREMIUM на 30 кВт",
+    name: 'Гібридна СЕС "під ключ" PREMIUM на 30 кВт',
     description: "Тип: гібридна, Потужність: 50 кВт (панелі), Фаз: 3, Гарантія: 25/5 років",
     power: "30 кВт",
     category: "systems",
@@ -102,7 +102,7 @@ export const products = [
   },
   {
     id: 19,
-    name: "Мережева СЕС \"під ключ\" MEDIUM на 30 кВт",
+    name: 'Мережева СЕС "під ключ" MEDIUM на 30 кВт',
     description: "Тип: мережева, Фаз: 3, Площа: 152 м², Гарантія: 300 місяців",
     power: "30 кВт",
     category: "systems",
@@ -111,7 +111,7 @@ export const products = [
   },
   {
     id: 20,
-    name: "Гібридна СЕС \"під ключ\" PREMIUM на 100 кВт",
+    name: 'Гібридна СЕС "під ключ" PREMIUM на 100 кВт',
     description: "Тип: гібридна, Фаз: 3, Площа: 670 м², Гарантія: 25/5 років",
     power: "100 кВт",
     category: "systems",
@@ -120,7 +120,7 @@ export const products = [
   },
   {
     id: 21,
-    name: "Гібридна СЕС \"під ключ\" PREMIUM на 200 кВт",
+    name: 'Гібридна СЕС "під ключ" PREMIUM на 200 кВт',
     description: "Тип: гібридна, Потужність: 200 кВт, Площа: 1230 м², Фаз: 3",
     power: "200 кВт",
     category: "systems",
@@ -129,7 +129,7 @@ export const products = [
   },
   {
     id: 22,
-    name: "Гібридна СЕС \"під ключ\" PREMIUM на 25 кВт",
+    name: 'Гібридна СЕС "під ключ" PREMIUM на 25 кВт',
     description: "Тип: гібридна, Фаз: 3, Площа: 200 м², Гарантія: 25/5 років",
     power: "25 кВт",
     category: "systems",
@@ -138,7 +138,7 @@ export const products = [
   },
   {
     id: 23,
-    name: "Гібридна СЕС \"під ключ\" PREMIUM на 50 кВт",
+    name: 'Гібридна СЕС "під ключ" PREMIUM на 50 кВт',
     description: "Тип: гібридна, Потужність: 50 кВт, Фаз: 3, Площа: 350 м²",
     power: "50 кВт",
     category: "systems",
@@ -147,7 +147,7 @@ export const products = [
   },
   {
     id: 24,
-    name: "Гібридна СЕС \"під ключ\" PREMIUM на 500 кВт",
+    name: 'Гібридна СЕС "під ключ" PREMIUM на 500 кВт',
     description: "Надпотужна станція. Тип: гібридна, Фаз: 3, Площа: 3100 м²",
     power: "500 кВт",
     category: "systems",
@@ -161,7 +161,8 @@ export const products = [
     power: "10 кВт",
     category: "systems",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplekti/gibrydna_elitna_10kwt_25sht/5kw-hybrid-10kw-elit-min-min-550x550-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplekti/gibrydna_elitna_10kwt_25sht/5kw-10kw-elit-min-min-550x550-241x208.png",
   },
   {
     id: 26,
@@ -170,11 +171,12 @@ export const products = [
     power: "30 кВт",
     category: "systems",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplekti/akciya-30kw-dna/solarstation30kw-akciya-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplekti/akciya-30kw-dna/solarstation30kw-akciya-241x208.png",
   },
   {
     id: 27,
-    name: "Мережева СЕС Еліт на 30 кВт \"під ключ\"",
+    name: 'Мережева СЕС Еліт на 30 кВт "під ключ"',
     description: "Тип: мережева, Фаз: 3, Площа: 170 м², Гарантія: 10 років",
     power: "30 кВт",
     category: "systems",
@@ -403,6 +405,78 @@ export const products = [
 
   // solarInverters
   {
+    id: 0,
+    name: "Гібридний інвертор Deye SUN-6K-SG03LP1-EU",
+    description: "Однофазний гібридний інвертор для приватних будинків. Надійність та гнучкість.",
+    power: "6 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://deye.com.ua/wp-content/uploads/2023/03/5kw-sg3.1.png",
+  },
+  {
+    id: 2,
+    name: "Гібридний інвертор Deye SUN-12K-SG04LP3-EU",
+    description: "Трифазний гібридний інвертор. Висока ефективність та підтримка АКБ.",
+    power: "12 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://deye.com.ua/wp-content/uploads/2022/05/sun-5-6-7-6-8k-2-1.jpg",
+  },
+  {
+    id: 3,
+    name: "Гібридний інвертор Deye SUN-20K-SG01HP3-EU-AM2",
+    description: "Потужний трифазний гібридний інвертор для великих об'єктів.",
+    power: "20 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://deye.com.ua/wp-content/uploads/2023/04/Deye-SUN-5-6-8-10-12-15-20-25K-SG01HP3-EU-AM2.png",
+  },
+  {
+    id: 4,
+    name: "Гібридний інвертор Deye SUN-30K-SG01HP3-EU-BM3",
+    description: "Високопотужне рішення для комерційного та приватного сектору.",
+    power: "30 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://deye.com.ua/wp-content/uploads/2023/04/SUN-5681012152025K-SG01HP3-EU-AM2.png",
+  },
+  {
+    id: 5,
+    name: "Гібридний інвертор Deye SUN-50K-SG01HP3-EU-BM4",
+    description: "Професійний трифазний гібридний інвертор для бізнесу.",
+    power: "50 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://deye.com.ua/wp-content/uploads/2023/04/SUN-5681012152025K-SG01HP3-EU-AM2.png",
+  },
+  {
+    id: 6,
+    name: "Гібридний інвертор Deye SUN-80K-SG02HP3-EU-EM6",
+    description: "Максимальна потужність у лінійці гібридних інверторів Deye.",
+    power: "80 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://sun-energy.com.ua/image/cache/catalog/inverter/deye/5ksg03lp1-eu/deyesun-5k-sg03lp1-eu-550x550.png",
+  },
+  {
+    id: 7,
+    name: "Мережевий інвертор Huawei SUN2000-30KTL-M3",
+    description: "Професійний трифазний інвертор для комерційних станцій.",
+    power: "30 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://sun-energy.com.ua/image/cache/catalog/sun2000-30ktl-m3-550x550.png",
+  },
+  {
+    id: 8,
+    name: "Мережевий інвертор Huawei SUN2000-100KTL-M2",
+    description: "Надвисока потужність для промислових сонячних електростанцій.",
+    power: "100 кВт",
+    category: "inverters",
+    badge: null,
+    image: "https://sun-energy.com.ua/image/cache/catalog/inverter/huawei/sun2000-100ktl-m2/5-1-550x550.png",
+  },
+  {
     id: 52,
     name: "Гібридний інвертор Afore AF6K-SLP",
     description: "Тип: гібридний, Фаз: 1, MPPT: 2/2, Потужність: 6 кВт",
@@ -418,7 +492,8 @@ export const products = [
     power: "12 кВт",
     category: "inverters",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/akumulatori/felicity/felicityesslifepo4lv51.2v100ah5.12kwh/1-2-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/akumulatori/felicity/felicityesslifepo4lv51.2v100ah5.12kwh/1-2-241x208.png",
   },
   {
     id: 54,
@@ -517,7 +592,8 @@ export const products = [
     power: "30 кВт",
     category: "inverters",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/inverter/deye/sun-20k-g04/sun-18-25k-g04-3phase-deye-1-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/inverter/deye/sun-20k-g04/sun-18-25k-g04-3phase-deye-1-241x208.png",
   },
   {
     id: 65,
@@ -635,7 +711,8 @@ export const products = [
     power: "6 мм²",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/solarcable/6mm/699277021_w700_h500_solar_kabel_4mm1-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/solarcable/6mm/699277021_w700_h500_solar_kabel_4mm1-241x208.jpg",
   },
   {
     id: 78,
@@ -644,7 +721,8 @@ export const products = [
     power: "IP67",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/standart%20mc4/mc4-waterproof-connector-mc4-connector-pv-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/standart%20mc4/mc4-waterproof-connector-mc4-connector-pv-241x208.jpg",
   },
   {
     id: 79,
@@ -680,7 +758,8 @@ export const products = [
     power: "3-в-1",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t3%20korotkii/HP-PV-03-7-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t3%20korotkii/HP-PV-03-7-241x208.jpg",
   },
   {
     id: 83,
@@ -689,7 +768,8 @@ export const products = [
     power: "3-в-1",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t3/651304099_w800_h640_htb1bu8xopxxxx__xq6xxfxxxn-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t3/651304099_w800_h640_htb1bu8xopxxxx__xq6xxfxxxn-241x208.jpg",
   },
   {
     id: 84,
@@ -698,7 +778,8 @@ export const products = [
     power: "4-в-1",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t4/213634000_w800_h640_waterproof_fou__pg_350x350-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t4/213634000_w800_h640_waterproof_fou__pg_350x350-241x208.jpg",
   },
   {
     id: 85,
@@ -707,7 +788,8 @@ export const products = [
     power: "5-в-1",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t5/213635777_w640_h2048_htb1kbtkgpxxxx__xq6xxfxxxr-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/konnektori/mc4%20t5/213635777_w640_h2048_htb1kbtkgpxxxx__xq6xxfxxxr-241x208.jpg",
   },
   {
     id: 86,
@@ -716,7 +798,8 @@ export const products = [
     power: "4 мм²",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/solarcable/4mm/solar-cable-red-black-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/solarcable/4mm/solar-cable-red-black-241x208.jpg",
   },
   {
     id: 87,
@@ -725,7 +808,8 @@ export const products = [
     power: "10 мм²",
     category: "accessories",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/solarcable/10mm/ECO-WORTHY-300W-Monocrystalline-On-Grid-Solar-Panel-Kit-2pcs-160W-Mono-Solar-Panels-300W-Grid-Tie-Power-Inverter-Solar-Cable-0-1-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/komplektyuchi/solarcable/10mm/ECO-WORTHY-300W-Monocrystalline-On-Grid-Solar-Panel-Kit-2pcs-160W-Mono-Solar-Panels-300W-Grid-Tie-Power-Inverter-Solar-Cable-0-1-241x208.jpg",
   },
   // energyStorageSystems
   {
@@ -827,7 +911,7 @@ export const products = [
     badge: null,
     image: "https://sun-energy.com.ua/image/cache/catalog/akumulatori/solax/solaxpoweraeliop50b200/6-1-241x208.png",
   },
-  // mountingSystems 
+  // mountingSystems
   {
     id: 1,
     name: "Кріплення для сонячних панелей",
@@ -925,7 +1009,8 @@ export const products = [
     power: "Універсальний",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/dvostoronnii%20prizhim/image1492370844-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/dvostoronnii%20prizhim/image1492370844-241x208.jpg",
   },
   {
     id: 109,
@@ -934,7 +1019,8 @@ export const products = [
     power: "35 мм",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhimmizhpanelnijserednij35mmaljuminijinerzhavijuchastala2/1-1-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhimmizhpanelnijserednij35mmaljuminijinerzhavijuchastala2/1-1-241x208.png",
   },
   {
     id: 110,
@@ -942,7 +1028,7 @@ export const products = [
     description: "Високоякісне кріплення для монтажних робіт, сталь А2",
     power: "М8*35",
     category: "mounting",
-    badge: null, 
+    badge: null,
     image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/spetsgajka/7-241x208.png",
   },
   {
@@ -961,7 +1047,8 @@ export const products = [
     power: "30 мм",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhim%2035%20kincevyi/Prijim-concevoy-03-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhim%2035%20kincevyi/Prijim-concevoy-03-241x208.jpg",
   },
   {
     id: 113,
@@ -970,7 +1057,8 @@ export const products = [
     power: "35 мм",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhim%2035%20kincevyi/Prijim-concevoy-03-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhim%2035%20kincevyi/Prijim-concevoy-03-241x208.jpg",
   },
   {
     id: 114,
@@ -978,8 +1066,9 @@ export const products = [
     description: "Алюмінієвий кінцевий прижим у комплекті з нерж. болтом",
     power: "35 мм",
     category: "mounting",
-    badge: null, 
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhimkincevij35mmaljuminijinerzhavijuchastala2/1-1-241x208.png",
+    badge: null,
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/prizhimkincevij35mmaljuminijinerzhavijuchastala2/1-1-241x208.png",
   },
   {
     id: 115,
@@ -1006,7 +1095,8 @@ export const products = [
     power: "200 мм",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/gvint-shurupdvorizbovijvzbori200mm/1-1-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/gvint-shurupdvorizbovijvzbori200mm/1-1-241x208.png",
   },
   {
     id: 118,
@@ -1033,7 +1123,8 @@ export const products = [
     power: "S-Type",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/Z%27ednyvach%20S%20profilu/Soedenitel-komplekt-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/Z%27ednyvach%20S%20profilu/Soedenitel-komplekt-241x208.jpg",
   },
   {
     id: 121,
@@ -1051,9 +1142,28 @@ export const products = [
     power: "Кронштейн",
     category: "mounting",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/kriplennya/kronshtein%20kriplennia%20s-profilu/Ugolok-na-krovlu-komplekt-241x208.jpg",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/kriplennya/kronshtein%20kriplennia%20s-profilu/Ugolok-na-krovlu-komplekt-241x208.jpg",
   },
   // energyBatteries
+  {
+    id: 1001,
+    name: "Deye SE-F5 Pro-C LiFePO4 LV 5.12kWh",
+    description: "Сучасний літій-залізо-фосфатний акумулятор 51.2V 100AH.",
+    power: "5.12 кВт-год",
+    category: "batteries",
+    badge: null,
+    image: "https://deye.com.ua/wp-content/uploads/2025/07/%E5%9C%86%E5%B1%8F%E6%AD%A3%E9%9D%A2.jpg",
+  },
+  {
+    id: 1002,
+    name: "Deye SE-G5.1 Pro-B LiFePO4 100AH",
+    description: "Надійний накопичувач енергії 51.2V 100AH для систем 5.12kWh.",
+    power: "5.12 кВт-год",
+    category: "batteries",
+    badge: null,
+    image: "https://deye.com/wp-content/uploads/2024/04/se-g5.1-pro-b%E6%AD%A3%E9%9D%A2.jpg",
+  },
   {
     id: 123,
     name: "Deye SE-F12 LiFePO4 LV 51.2v 230AH 11.8kWh",
@@ -1079,7 +1189,8 @@ export const products = [
     power: "5.12 кВт-год",
     category: "batteries",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/akumulatori/deye/deyese-g5.1pro-b/akumulyatorna-b-1-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/akumulatori/deye/deyese-g5.1pro-b/akumulyatorna-b-1-241x208.png",
   },
   {
     id: 126,
@@ -1088,7 +1199,8 @@ export const products = [
     power: "2.56 кВт-год",
     category: "batteries",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/akumulatori/axioma/ax-lfp-200128v200ah/ax-lfp-200-3-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/akumulatori/axioma/ax-lfp-200128v200ah/ax-lfp-200-3-241x208.png",
   },
   {
     id: 127,
@@ -1124,7 +1236,8 @@ export const products = [
     power: "16 кВт-год",
     category: "batteries",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/akumulatori/felicity/felicityflb48314-eu/fla48314-eu.83-1-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/akumulatori/felicity/felicityflb48314-eu/fla48314-eu.83-1-241x208.png",
   },
   {
     id: 131,
@@ -1142,7 +1255,8 @@ export const products = [
     power: "4.8 кВт-год",
     category: "batteries",
     badge: null,
-    image: "https://sun-energy.com.ua/image/cache/catalog/inverter/logic%20power/lpw-hmb-5485-5000va%284000vt%29/acumpolontechus5000-1-241x208.png",
+    image:
+      "https://sun-energy.com.ua/image/cache/catalog/inverter/logic%20power/lpw-hmb-5485-5000va%284000vt%29/acumpolontechus5000-1-241x208.png",
   },
   {
     id: 133,
@@ -1206,5 +1320,5 @@ export const products = [
     category: "batteries",
     badge: null,
     image: "https://sun-energy.com.ua/image/cache/catalog/lrackmain-241x208.png",
-  }
-]
+  },
+];
