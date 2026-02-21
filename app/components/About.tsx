@@ -10,26 +10,25 @@ export default function About() {
   return (
     <section id="about" className="py-8 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
-
         {/* Section 1: Reliable Partner */}
         <div ref={sec1Ref}>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8 gap-4">
-            <h2 className={`text-3xl md:text-5xl font-bold text-black uppercase leading-tight animate-fade-up ${sec1InView ? "in-view" : ""}`}>
+            <h2
+              className={`text-3xl md:text-5xl font-bold text-black uppercase leading-tight animate-fade-up ${sec1InView ? "in-view" : ""}`}>
               ТОЧНІСТЬ У КОЖНОМУ ВИМІРІ, <br />
               <span className="text-[#E8922D]">ЕНЕРГІЯ У КОЖНОМУ ДОМІ</span>
             </h2>
             <a
               href="#contacts"
               onClick={(e) => scrollToContact(e, "contacts")}
-              className={`inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#1B2A4A] hover:bg-[#152238] transition-all shadow-lg active:scale-95 active:shadow-inner cursor-pointer flex-shrink-0 animate-fade-up delay-200 ${sec1InView ? "in-view" : ""}`}
-            >
+              className={`inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#1B2A4A] hover:bg-[#152238] transition-all shadow-lg active:scale-95 active:shadow-inner cursor-pointer flex-shrink-0 animate-fade-up delay-200 ${sec1InView ? "in-view" : ""}`}>
               Зв'язатися з нами
             </a>
           </div>
 
           <div className="relative h-64 md:h-[500px] w-full rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="/about-image.webp"
+              src="https://static.vecteezy.com/system/resources/previews/054/878/636/non_2x/high-resolution-image-of-solar-farm-with-mountains-and-sunset-view-free-photo.jpeg 1748w, https://static.vecteezy.com/system/resources/previews/054/878/636/large_2x/high-resolution-image-of-solar-farm-with-mountains-and-sunset-view-free-photo.jpeg 3497w"
               alt="GeoSolar — сонячна електростанція"
               className="w-full h-full object-cover"
             />
@@ -39,8 +38,10 @@ export default function About() {
 
         {/* Section 2: About GeoSolar */}
         <div ref={sec2Ref}>
-          <h2 className={`text-3xl md:text-5xl font-bold uppercase leading-tight mb-6 animate-fade-up ${sec2InView ? "in-view" : ""}`}>
-            ПРО <span className="text-[#1B2A4A]">GEO</span><span className="text-[#E8922D]">SOLAR</span>
+          <h2
+            className={`text-3xl md:text-5xl font-bold uppercase leading-tight mb-6 animate-fade-up ${sec2InView ? "in-view" : ""}`}>
+            ПРО <span className="text-[#1B2A4A]">GEO</span>
+            <span className="text-[#E8922D]">SOLAR</span>
           </h2>
 
           {/* <div className="flex gap-2 mb-8">
@@ -49,34 +50,27 @@ export default function About() {
           </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className={`space-y-5 text-gray-700 leading-relaxed animate-fade-right ${sec2InView ? "in-view" : ""}`}>
+            <div
+              className={`space-y-5 text-gray-700 leading-relaxed animate-fade-right ${sec2InView ? "in-view" : ""}`}>
               <p>
-                <span className="font-bold"><span className="text-[#1B2A4A]">Geo</span><span className="text-[#E8922D]">Solar</span></span> — це
-                поєднання професійної геодезії та сучасних технологій сонячної
-                енергетики. Ми допомагаємо бізнесу та приватним домогосподарствам{" "}
-                <span className="font-bold text-black">
-                  стати незалежними від відключень та високих тарифів.
-                </span>
+                <span className="font-bold">
+                  <span className="text-[#1B2A4A]">Geo</span>
+                  <span className="text-[#E8922D]">Solar</span>
+                </span>{" "}
+                — це поєднання професійної геодезії та сучасних технологій сонячної енергетики. Ми допомагаємо бізнесу
+                та приватним домогосподарствам{" "}
+                <span className="font-bold text-black">стати незалежними від відключень та високих тарифів.</span>
               </p>
               <p>
-                Все починається з{" "}
-                <span className="font-bold text-black">
-                  точних геодезичних вимірювань
-                </span>{" "}
-                — ми професійно знімаємо ділянку, щоб розрахувати ідеальні кути
-                нахилу та уникнути найменших затінень. Кожен ватт вашої станції
-                працюватиме на вас!
+                Все починається з <span className="font-bold text-black">точних геодезичних вимірювань</span> — ми
+                професійно знімаємо ділянку, щоб розрахувати ідеальні кути нахилу та уникнути найменших затінень. Кожен
+                ватт вашої станції працюватиме на вас!
               </p>
               <p>
-                Ми спеціалізуємося на проєктах потужністю від{" "}
-                <span className="font-bold text-black">5 кВт</span> (для
-                приватних осіб) та від {" "}
-                <span className="font-bold text-black">10 кВт</span> (для
-                бізнесу), використовуючи обладнання Tier-1:{" "}
-                <span className="font-bold text-black">
-                  інвертори Huawei, Solis, Deye та панелі Longi
-                </span>{" "}
-                з ККД 23.3%.
+                Ми спеціалізуємося на проєктах потужністю від <span className="font-bold text-black">5 кВт</span> (для
+                приватних осіб) та від <span className="font-bold text-black">10 кВт</span> (для бізнесу),
+                використовуючи обладнання Tier-1:{" "}
+                <span className="font-bold text-black">інвертори Huawei, Solis, Deye та панелі Longi</span> з ККД 23.3%.
               </p>
             </div>
 
@@ -86,7 +80,9 @@ export default function About() {
                   src="/about-image.webp"
                   alt="Геодезичне знімання"
                   className="w-full h-full object-cover"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = "none";
+                  }}
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-gray-200 mt-12">
@@ -94,7 +90,9 @@ export default function About() {
                   src="/hero-img.png"
                   alt="Сонячна станція GeoSolar"
                   className="w-full h-full object-cover"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = "none";
+                  }}
                 />
               </div>
             </div>
@@ -104,7 +102,8 @@ export default function About() {
         {/* Section 3: Benefits */}
         <div>
           <h2 className="text-3xl md:text-5xl font-bold uppercase leading-tight mb-12">
-            ЧОМУ <span className="text-[#1B2A4A]">GEO</span><span className="text-[#E8922D]">SOLAR</span>?
+            ЧОМУ <span className="text-[#1B2A4A]">GEO</span>
+            <span className="text-[#E8922D]">SOLAR</span>?
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -113,7 +112,9 @@ export default function About() {
                 src="/why.png"
                 alt="GeoSolar проєкт"
                 className="w-full h-full object-cover"
-                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = "none";
+                }}
               />
             </div>
 
@@ -142,16 +143,10 @@ export default function About() {
                   },
                 ].map((item) => (
                   <div key={item.n} className="flex gap-6">
-                    <span className="text-[#E8922D] font-bold text-xl pt-0.5 flex-shrink-0 w-8">
-                      {item.n}
-                    </span>
+                    <span className="text-[#E8922D] font-bold text-xl pt-0.5 flex-shrink-0 w-8">{item.n}</span>
                     <div>
-                      <h3 className="text-xl font-bold text-black mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        {item.desc}
-                      </p>
+                      <h3 className="text-xl font-bold text-black mb-2">{item.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -159,7 +154,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

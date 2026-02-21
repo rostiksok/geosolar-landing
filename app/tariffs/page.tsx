@@ -19,7 +19,9 @@ export default function Tariffs() {
                   <tr className="bg-[#FFF8F0]">
                     <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#1B2A4A]">Обладнання</th>
                     <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#1B2A4A]">Потужність</th>
-                    <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#1B2A4A]">Орієнтовна вартість</th>
+                    <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#1B2A4A]">
+                      Орієнтовна вартість
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -41,6 +43,11 @@ export default function Tariffs() {
                   <tr className="bg-gray-50">
                     <td className="border border-gray-200 px-4 py-3">Longi LR5-72HTH-615M</td>
                     <td className="border border-gray-200 px-4 py-3">615 Вт</td>
+                    <td className="border border-gray-200 px-4 py-3">За запитом</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-4 py-3">Акумуляторні батареї Deye</td>
+                    <td className="border border-gray-200 px-4 py-3">від 5 кВт до 240 кВт</td>
                     <td className="border border-gray-200 px-4 py-3">За запитом</td>
                   </tr>
                 </tbody>
@@ -78,18 +85,32 @@ export default function Tariffs() {
           <section>
             <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">Вартість послуг</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Геодезичне знімання ділянки:</strong> включено у вартість комплексного проєкту</li>
-              <li><strong>Проєктування СЕС:</strong> включено у вартість комплексного проєкту</li>
-              <li><strong>Монтаж та підключення:</strong> включено у вартість комплексного проєкту</li>
-              <li><strong>Оформлення «Зеленого тарифу»:</strong> включено у вартість комплексного проєкту</li>
+              <li>
+                <strong>Геодезичне знімання ділянки:</strong> включено у вартість комплексного проєкту
+              </li>
+              <li>
+                <strong>Проєктування СЕС:</strong> включено у вартість комплексного проєкту
+              </li>
+              <li>
+                <strong>Монтаж та підключення:</strong> включено у вартість комплексного проєкту
+              </li>
+              <li>
+                <strong>Оформлення «Зеленого тарифу»:</strong> включено у вартість комплексного проєкту
+              </li>
             </ul>
           </section>
 
           <section className="bg-[#FFF8F0] p-6 rounded-2xl">
             <p className="text-sm text-gray-600">
               Точну вартість обладнання та послуг для вашого проєкту можна отримати, звернувшись до нас за адресою{" "}
-              <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">office@geosolar.com.ua</a>{" "}
-              або зателефонувавши за номером <a href="tel:+380979442265" className="text-[#E8922D] font-bold hover:underline">+380 (97) 944 22 65</a>.
+              <a href="mailto:office@geosolar.com.ua" className="text-[#E8922D] font-bold hover:underline">
+                office@geosolar.com.ua
+              </a>{" "}
+              або зателефонувавши за номером{" "}
+              <a href="tel:+380979442265" className="text-[#E8922D] font-bold hover:underline">
+                +380 (97) 944 22 65
+              </a>
+              .
             </p>
           </section>
         </div>
